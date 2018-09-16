@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[Your data is YOUR data - /e/ Beta 体验]]></title>
+      <url>/2018/evaluating-mydataismydata-beta/</url>
+      <content type="html"><![CDATA[<p>我也不知道 <a href="https://en.wikipedia.org/wiki/Ga%C3%ABl_Duval" target="_blank" rel="noopener">Gaël Duval</a> （就是创立了 <a href="https://en.wikipedia.org/wiki/Mandriva_Linux" target="_blank" rel="noopener">Mandriva</a> 的那位）是受了什么刺激要把 eelo 这个名字改成一个任性的 <strong>/e/</strong>，更任性的是，/e/ 要读作 <code>my data is my data</code>……</p>
+<a id="more"></a>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>……槽吐完了。从这个任性的名字中也不难看出 <a href="https://e.foundation" target="_blank" rel="noopener">/e/</a> 的主要特色就是<strong>尊重用户隐私</strong>，/e/ 也在近日<a href="https://e.foundation/e-first-beta-is-here/" target="_blank" rel="noopener">释出了</a>首个 Beta 0.1 版本。笔者也借这个机会来体验了一下这个想要打造一个独立于 Google Apple 这类互联网巨头的生态的 Android ROM。</p>
+<h2 id="申请测试账号"><a href="#申请测试账号" class="headerlink" title="申请测试账号"></a>申请测试账号</h2><p>/e/ 的线上服务暂时还没有开放注册，需要发送邮件申请一个测试账号。</p>
+<p>发送任意内容邮件至 <a href="mailto: contact@e.email" target="_blank" rel="noopener">contact@e.email</a>，邮件主题须为 <code>test account</code></p>
+<p>如果申请通过，将收到一封带有链接的邮件以继续完成注册。</p>
+<p><img src="https://i.loli.net/2018/09/16/5b9db28c9f76f.png" alt=""></p>
+<p>/e/ 还提供了一个邮箱服务，在 <a href="https://e.email" target="_blank" rel="noopener">e.email</a> 登录即可使用。</p>
+<p><img src="https://i.loli.net/2018/09/16/5b9db3c43b16d.png" alt=""></p>
+<h2 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h2><p>在 <a href="https://gitlab.e.foundation/e/wiki/en/wikis/devices-list" target="_blank" rel="noopener">https://gitlab.e.foundation/e/wiki/en/wikis/devices-list</a> 找到你的机型，进入机型页面并下载。</p>
+<p><img src="https://i.loli.net/2018/09/16/5b9db59820b1c.png" alt=""></p>
+<p>/e/ 0.1 基于 Lineage OS 14.1 开发，刷入过程与其他 ROM 无异，没有 Project Treble 支持。</p>
+<h2 id="进入系统"><a href="#进入系统" class="headerlink" title="进入系统"></a>进入系统</h2><p>首先是设置向导</p>
+<p><img src="https://ooo.0o0.ooo/2018/09/16/5b9db77623745.png" alt=""></p>
+<p>与 Lineage OS 基本无异，除了这里……需要登录刚才所注册的测试账号，不过也可以跳过</p>
+<p><img src="https://i.loli.net/2018/09/16/5b9db87195658.png" alt="Screenshot_20180915-233420.png"></p>
+<p>默认启动器是 /e/ 开发的 <a href="https://gitlab.e.foundation/e/apps/BlissLauncher" target="_blank" rel="noopener">Bliss Launcher</a> </p>
+<p>…</p>
+<p>……</p>
+<p>…………</p>
+<p>………………</p>
+<p>这股果味是怎么回事？</p>
+<p><img src="https://i.loli.net/2018/09/16/5b9dba0105fdb.png" alt=""></p>
+<p>……在笔者进入桌面的同时，系统正在将所有照片、笔记等项目备份至 <a href="https://drive.ecloud.global" target="_blank" rel="noopener">/e/ Drive</a>（基于 Nextcloud），但显然空间不太够用，于是开始报错……</p>
+<p><img src="https://i.loli.net/2018/09/16/5b9dbdc2121ad.png" alt=""></p>
+<blockquote>
+<p>嗯……只有 50 MB</p>
+</blockquote>
+<p><del>问题解决（</del></p>
+<p><img src="https://i.loli.net/2018/09/16/5b9dbe2d17507.png" alt=""></p>
+<h2 id="系统应用"><a href="#系统应用" class="headerlink" title="系统应用"></a>系统应用</h2><p><img src="https://ws1.sinaimg.cn/large/006N1muNgy1fvb6tcqa7kj33c02yo1l1.jpg" alt=""></p>
+<p>均以隐私保护为选择标准</p>
+<ul>
+<li><p>SMS：<a href="https://signal.org/" target="_blank" rel="noopener">Signal</a> GPLv3</p>
+</li>
+<li><p>即时通讯： <a href="https://telegram.org" target="_blank" rel="noopener">Telegram</a> GPLv2</p>
+</li>
+<li><p>地图：<a href="https://www.generalmagic.com/magic-earth" target="_blank" rel="noopener">Magic Earth</a> 闭源，使用 OpenStreetMap</p>
+</li>
+<li><p>天气：<a href="https://github.com/qqq3/good-weather" target="_blank" rel="noopener">Good Weather</a> GPLv3</p>
+</li>
+<li><p>邮件：<a href="https://k9mail.github.io/" target="_blank" rel="noopener">K-9 Mail</a> Apache 2.0</p>
+</li>
+<li><p>手电筒：<a href="https://github.com/SimpleMobileTools/Simple-Flashlight" target="_blank" rel="noopener">Simple Flashlight</a> Apache 2.0</p>
+</li>
+<li><p>ToDo：<a href="https://github.com/dmfs/opentasks" target="_blank" rel="noopener">Open Tasks</a> Apache 2.0</p>
+</li>
+<li><p>笔记：<a href="https://github.com/stefan-niedermann/nextcloud-notes" target="_blank" rel="noopener">Nextcloud Notes</a> GPLv3</p>
+</li>
+</ul>
+<p>此外还有重头戏：Google 套件的开源替代品 <a href="https://microg.org/" target="_blank" rel="noopener">microG</a>，/e/ 表示</p>
+<blockquote>
+<p>microG is a 100% open-source alternative to Google Services and is <strong>key for the success</strong> of <a href="https://e.foundation/e-story/" target="_blank" rel="noopener">/e/</a>.</p>
+</blockquote>
+<p>关于 microG 的更多信息请移步 <a href="https://www.blackyau.cc/4.html" target="_blank" rel="noopener">MicroG安装与配置</a></p>
+<p><img src="https://i.loli.net/2018/09/16/5b9dca66785c1.png" alt=""></p>
+<h2 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h2><p>/e/ 的默认搜索引擎 <a href="https://spot.ecloud.global" target="_blank" rel="noopener">/e/ spot</a> 是基于 <a href="https://searx.me/" target="_blank" rel="noopener">searx</a> 的<a href="https://en.wikipedia.org/wiki/Metasearch_engine" target="_blank" rel="noopener">元搜索引擎</a>，此外还提供 Qwant 和 DuckDuckGo。</p>
+<p><img src="https://i.loli.net/2018/09/16/5b9dcbacaa116.png" alt=""></p>
+<p>/e/ 支持登录 Google 账号同步通讯录等内容，此功能由 <code>at.bitfire.davdroid</code> 提供</p>
+<p><img src="https://i.loli.net/2018/09/16/5b9dceb60485e.png" alt=""></p>
+<p>/e/ 的 OTA 界面</p>
+<p><img src="https://i.loli.net/2018/09/16/5b9dd03ca82e1.png" alt=""></p>
+<h2 id="结"><a href="#结" class="headerlink" title="结"></a>结</h2><p>从使用  microG 替代 Google 全家桶到自建云服务，可以看出 /e/ 为保护隐私而与 Google 这些互联网公司分手的决心。虽然 /e/ 仍处于起步阶段，各方面都有些简陋（比如 Android 7.1、无限报错的备份和单薄的 Lineage OS 隐私防护……），但在越来越多的用户开始注重数据安全的背景下，我对 /e/ 的发展前景持乐观态度。</p>
+<script async src="https://telegram.org/js/telegram-widget.js?4" data-telegram-post="LIF_Group/466592" data-width="100%"></script>
+
+<h1 id="附"><a href="#附" class="headerlink" title="附"></a>附</h1><ul>
+<li>/e/ <a href="https://gitlab.e.foundation/e" target="_blank" rel="noopener">源代码</a></li>
+<li>/e/ <a href="https://gitlab.e.foundation/e/wiki/en/wikis/home" target="_blank" rel="noopener">官方文档</a></li>
+<li>/e/ Telegram 频道 <a href="https://t.me/mydataismydata" target="_blank" rel="noopener">@mydataismydata</a></li>
+<li>/e/ <a href="https://t.me/joinchat/AdMoEA9YzUohzhotLu9IWg" target="_blank" rel="noopener">Telegram 群组</a></li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 计算机技术 </category>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> /e/ </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[安装 Flatpak 格式的 Deepin 应用]]></title>
+      <url>/2018/install-dfpapp/</url>
+      <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="350" height="100" src="//music.163.com/outchain/player?type=2&id=463268241&auto=1&height=66"></iframe>
+
+<p>Deepin 最近也是多灾多难，<del>老板跑路（，</del>新版本难产……</p>
+<a id="more"></a>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>话说 Deepin 团队已经使用 <a href="https://flatpak.org/" target="_blank" rel="noopener">Flatpak</a> 封装自家应用，这无疑极大方便了其他发行版用户。但是 Deepin 没有直接提供 Flatpak 源等等，所以想要安装还是要自己动手。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>好一点的网络</li>
+<li><a href="https://flatpak.org/setup/" target="_blank" rel="noopener">安装了 Flatpak</a> 的 Linux 发行版 (x86_64)</li>
+<li>洗把脸</li>
+</ul>
+<h2 id="安装-Deepin-Runtime"><a href="#安装-Deepin-Runtime" class="headerlink" title="安装 Deepin Runtime"></a>安装 Deepin Runtime</h2><p>Flatpak 应用运行需要一套运行时（Runtime）作为基础环境，Freedesktop、GNOME、KDE <a href="http://docs.flatpak.org/en/latest/available-runtimes.html" target="_blank" rel="noopener">都做了一套</a>供 GTK/Qt 等应用开发者选用。Deepin 则自己做了一套。</p>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/deepin-fprt-com.deepin.runtime-15.5/" target="_blank" rel="noopener">下载</a> <code>com.deepin.platform-15.5_1.0.4+r2_amd64.deb</code> <code>deepin-fprt-org.deepin.flatdeb.base.platform-15.5_1.0.5+r7_amd64.deb</code>，解压出打包好的 <code>bundle</code> 文件 （版本号可能不同）</p>
+<p>（以下均以 TUNA 镜像源为例，官方源实在无法直视）</p>
+<p><img src="https://i.jpg.dog/img/801c7d0df307487125b66dcbd954267e.png" alt="801c7d0df307487125b66dcbd954267e.png"></p>
+<p>然后安装</p>
+<pre><code class="bash">flatpak install bundle --bundle
+</code></pre>
+<h2 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h2><p>Deepin 打包好的应用包括：</p>
+<ul>
+<li>深度日历</li>
+<li>深度计算器</li>
+<li>深度看图</li>
+<li>深度影院</li>
+<li>深度音乐</li>
+<li>深度录屏</li>
+<li>深度录音</li>
+<li>深度截图</li>
+<li>还有好多……</li>
+<li>我列不完了……</li>
+<li>Shadowsocks-Qt5 （？？？）</li>
+</ul>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/</a></p>
+<p>Ctrl + F <code>deepin-fpapp</code></p>
+<p>这里以「深度日历」为例</p>
+<hr>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/deepin-fpapp-org.deepin.flatdeb.deepin-calendar/" target="_blank" rel="noopener">下载</a> <code>deepin-fpapp-org.deepin.flatdeb.deepin-calendar_1.2.3+r1_amd64.deb</code></p>
+<p>依照上文，解压出 <code>bundle</code>，如法炮制</p>
+<pre><code class="bash">flatpak install bundle --bundle
+Installing: org.deepin.flatdeb.deepin-calendar/x86_64/master from bundle bundle
+Now at 38c791026f75.
+</code></pre>
+<p><em><code>org.deepin.flatdeb.deepin-calendar</code> 是应用包名</em></p>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>安装完的 Flatpak 应用可以通过命令行运行</p>
+<pre><code class="bash">flatpak run org.deepin.flatdeb.deepin-calendar
+</code></pre>
+<p>每次都通过命令启动肯定会让人疯掉，显然需要写一个 <code>.desktop</code> 文件，或者用类似 KDE Menu Editor 这样的工具来新建一个</p>
+<pre><code>[Desktop Entry]
+Exec=flatpak run org.deepin.flatdeb.deepin-calendar
+...
+</code></pre><p>Deepin 应用的图标可以在<a href="https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/deepin-icon-theme/" target="_blank" rel="noopener">这里</a>找到</p>
+<hr>
+<blockquote>
+<p>openSUSE Tumbleweed<br>KDE Plasma 5.13.2</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/07/15/5b4b488998855.png" alt="Screenshot_20180715_211032.png"></p>
+<blockquote>
+<p>深度音乐</p>
+</blockquote>
+<p><img src="https://i.jpg.dog/img/5df278132a1b57c329b1a28f73fdcb4c.png" alt="5df278132a1b57c329b1a28f73fdcb4c.png"></p>
+<blockquote>
+<p>深度取色器 （Plasma 有更方便的 #斜眼）</p>
+</blockquote>
+<p><img src="https://i.jpg.dog/img/a33a2bb704a933eaca84a9c41604fee1.png" alt="a33a2bb704a933eaca84a9c41604fee1.png"></p>
+<blockquote>
+<p>深度日历</p>
+</blockquote>
+<p>……</p>
+<h1 id="附"><a href="#附" class="headerlink" title="附"></a>附</h1><ul>
+<li>Deepin 提到未来可能会建立 Flatpak 源，显然这又是一大张饼（</li>
+<li>我曾考虑过在 <a href="https://flathub.org/home" target="_blank" rel="noopener">Flathub</a> 上打包一些 Deepin 应用，但 Flathub 原则上只允许开发者本人来维护……</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 计算机技术 </category>
+            
+            <category> Linux </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Flatpak </tag>
+            
+            <tag> Deepin </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[HTTPS://YKYe.top]]></title>
+      <url>/2018/about-ykye-top/</url>
+      <content type="html"><![CDATA[<p>如图，Y0ngm3ng 现在启用了 <code>YKYe.top</code> 域名<br><a id="more"></a></p>
+<h2 id="关于-YKYe"><a href="#关于-YKYe" class="headerlink" title="关于 YKYe"></a>关于 YKYe</h2><p>注册于 <a href="https://namesilo.com" target="_blank" rel="noopener">Namesilo</a></p>
+<p><strong>Y</strong>ongmeng <strong>K</strong>enny <strong>Ye</strong></p>
+<blockquote>
+<p>至于 <code>.top</code>，我不会告诉你其实是挑便宜买的……</p>
+</blockquote>
+<h2 id="再说两句"><a href="#再说两句" class="headerlink" title="再说两句"></a>再说两句</h2><p>1.<br><img src="https://ooo.0o0.ooo/2018/04/22/5adc5c43c89b3.png" alt=""><br>这才是我想注册的域名嘛。再看一下价格……</p>
+<p>2.<br>Y0ngm3ng 依然托管在 GitHub Page 上，所以……不要对访问速度奢求太多了……</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 无题 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 域名 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[使用 Archiso 定制 Arch Linux 镜像]]></title>
+      <url>/2018/archiso-guide/</url>
+      <content type="html"><![CDATA[<p>Arch Linux 作为高度可定制化的 Linux 发行版，连制作镜像都提供了一系列顺手的工具。这里简要介绍一下 Archiso 的用法。</p>
+<a id="more"></a>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>已经安装好的 Arch Linux x86_64</li>
+<li>能联网的电脑</li>
+<li>安装好 <code>archiso</code></li>
+<li>建立一个工作目录，以 <code>~/archiso/</code>为例。</li>
+<li>洗把脸</li>
+</ul>
+<p>接下来的操作都需要 root 权限（主要是为了避免文件所有权问题），所以……</p>
+<pre><code>$ su root
+</code></pre><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>Archiso 提供了几个模板，这里使用倾向于自定义的 <code>releng</code></p>
+<pre><code># cp -r /usr/share/archiso/configs/releng/* archlive
+</code></pre><h2 id="安装软件包"><a href="#安装软件包" class="headerlink" title="安装软件包"></a>安装软件包</h2><p>编辑 <code>packages.both</code> 设置需要安装的软件包。如有需要，可以编辑 <code>packages.i686</code> 或 <code>packages.x86_64</code> 以单独设置不同架构要安装的软件包</p>
+<h3 id="安装-multilib-仓库中的软件包（选）"><a href="#安装-multilib-仓库中的软件包（选）" class="headerlink" title="安装 multilib 仓库中的软件包（选）"></a>安装 multilib 仓库中的软件包（选）</h3><p>如果你制作的 Archiso 只用于 x86_64，直接编辑 <code>pacman.conf</code> 启用就好</p>
+<p>如果不是，那你需要两份分别用于 x86_64 和 i686 的 pacman 配置文件</p>
+<pre><code># cp pacman.conf pacman-x86_64.conf &amp;&amp; cp pacman.conf pacman-i686.conf
+</code></pre><p>编辑 <code>build.sh</code>，将 (Line 249)：</p>
+<pre><code>run_once make_pacman_conf
+
+# Do all stuff for each airootfs
+for arch in i686 x86_64; do
+    run_once make_basefs
+    run_once make_packages
+done
+
+run_once make_packages_efi
+
+for arch in i686 x86_64; do
+    run_once make_setup_mkinitcpio
+    run_once make_customize_airootfs
+done
+</code></pre><p>改为：</p>
+<pre><code>cp -v releng/pacman-x86_64.conf releng/pacman.conf
+run_once make_pacman_conf
+
+# Do all stuff for each airootfs
+for arch in x86_64; do
+    run_once make_basefs
+    run_once make_packages
+    run_once make_packages_efi
+    run_once make_setup_mkinitcpio
+    run_once make_customize_airootfs
+done
+
+echo make_pacman_conf i686
+cp -v releng/pacman-i686.conf releng/pacman.conf
+cp -v releng/pacman-i686.conf ${work_dir}/pacman.conf
+
+
+for arch in i686; do
+    run_once make_basefs
+    run_once make_packages
+    run_once make_packages_efi
+    run_once make_setup_mkinitcpio
+    run_once make_customize_airootfs
+done
+</code></pre><p>最后，编辑 <code>pacman-x86_64.conf</code> 启用 <code>multilib</code> 仓库</p>
+<pre><code>[multilib]
+SigLevel = PackageRequired
+Include = /etc/pacman.d/mirrorlist
+</code></pre><h2 id="添加文件"><a href="#添加文件" class="headerlink" title="添加文件"></a>添加文件</h2><blockquote>
+<p>这一步一定要用 root 权限，以避免文件所有权问题！！！</p>
+</blockquote>
+<p>把 <code>archiso/airootfs</code> 当成根目录就好，把你需要添加的文件 / 配置文件云云复制进去</p>
+<p><em>注意：用户 home 文件夹的文件要添加到 <code>archiso/airootfs/etc/skel</code> 中</em></p>
+<h2 id="添加普通用户"><a href="#添加普通用户" class="headerlink" title="添加普通用户"></a>添加普通用户</h2><p>以用户名 archman 为例，编辑 <code>archiso/airootfs/root/customize_airootfs.sh</code>，添加：</p>
+<pre><code>useradd -m -G wheel -s /bin/bash archman
+passwd -d archman //这两行的作用是禁用用户密码
+passwd -u archman
+</code></pre><h2 id="配置显示管理器（选）"><a href="#配置显示管理器（选）" class="headerlink" title="配置显示管理器（选）"></a>配置显示管理器（选）</h2><p>以 SDDM 为例，创建软链接</p>
+<pre><code># ln -s /usr/lib/systemd/system/sddm.service archiso/airootfs/etc/systemd/system/display-manager.service
+</code></pre><p>如果需要显示管理器开机启动，则编辑 <code>archiso/airootfs/root/customize_airootfs.sh</code>，将：</p>
+<pre><code>systemctl set-default multi-user.target
+</code></pre><p>改为：</p>
+<pre><code>systemctl set-default graphical.target
+</code></pre><h2 id="生成镜像"><a href="#生成镜像" class="headerlink" title="生成镜像"></a>生成镜像</h2><p>完成配置后，就生成镜像吧</p>
+<pre><code># mkdir archiso/out/
+# cd archiso
+# ./build -v
+</code></pre><p>使用 <code>./build -h</code> 来看看还可以使用哪些参数</p>
+<eof>
+
+<h1 id="附"><a href="#附" class="headerlink" title="附"></a>附</h1><ul>
+<li><a href="https://wiki.archlinux.org/index.php/Archiso" target="_blank" rel="noopener">官方文档</a></li>
+<li><a href="https://github.com/Wuxiangdong/Archiso" target="_blank" rel="noopener">例1：Wuxiangdong 的配置文件</a></li>
+<li><a href="https://github.com/Yeyongmeng29/Archlive" target="_blank" rel="noopener">例2：我的配置文件</a></li>
+</ul>
+</eof>]]></content>
+      
+        <categories>
+            
+            <category> 计算机技术 </category>
+            
+            <category> Linux </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Arch Linux </tag>
+            
+            <tag> Archiso </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[一些古董 Linux 发行版们 Vol. 1]]></title>
+      <url>/2018/some-antique-linux-vol1/</url>
+      <content type="html"><![CDATA[<p>上个月突然心血来潮，，从 1 月 27 号开始陆续挖了一些古董级 Linux 发行版出来考古。</p>
+<blockquote>
+<p><em>其实还不算古董，真的古董不是还没去挖就是恐怕连尸块都找不着了……</em></p>
+</blockquote>
+<p>现在把这次考古的部分内容整理出来，大概只有我这种闲人会干这种事。</p>
+<a id="more"></a>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>本次考古：</p>
+<ul>
+<li>Linux Deepin 9.12 </li>
+</ul>
+<blockquote>
+<p>Hiweed 就属于那种尸块都找不着的……</p>
+</blockquote>
+<ul>
+<li><p>Fedora 7 </p>
+</li>
+<li><p>Debian 1.3.1</p>
+</li>
+</ul>
+<blockquote>
+<p>Debian 1.1 手头倒也有，不过 QEMU 我不太会用</p>
+</blockquote>
+<ul>
+<li>Red Hat Linux 9</li>
+</ul>
+<h2 id="关于主机"><a href="#关于主机" class="headerlink" title="关于主机"></a>关于主机</h2><p>Manjaro / Deepin DE，使用 VirtualBox。配置稀烂不详列。</p>
+<p><img src="https://i.loli.net/2018/02/05/5a783f2ce9354.png" alt="深度截图_20180127190310.png"></p>
+<blockquote>
+<p>有多烂呢，就是这么烂的……</p>
+</blockquote>
+<h2 id="Linux-Deepin-9-12"><a href="#Linux-Deepin-9-12" class="headerlink" title="Linux Deepin 9.12"></a>Linux Deepin 9.12</h2><p>来源：<a href="http://cdimage.deepin.com/releases-archive/9.12/" target="_blank" rel="noopener">Deepin 官方归档</a><br><img src="https://i.loli.net/2018/02/05/5a78409671628.png" alt="深度截图_选择区域_20180127184429.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7840a09f69f.png" alt="深度截图_20180127184500.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7840a2d4e7d.png" alt="深度截图_20180127184544.png"> </p>
+<p><img src="https://i.loli.net/2018/02/05/5a7841d32b573.png" alt="VirtualBox_Linux Deepin_27_01_2018_18_53_20.png"> </p>
+<blockquote>
+<p>此时 Deepin 仍基于 Ubuntu ，配 Xfce4</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7842dd8f524.png" alt="VirtualBox_Linux Deepin_27_01_2018_18_59_13.png"></p>
+<blockquote>
+<p>安装完成</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784365e8bb5.png" alt="VirtualBox_Linux Deepin_27_01_2018_19_14_57.png"> </p>
+<blockquote>
+<p>WebQQ 的凝视</p>
+<p>腾讯曾于 2008 年发布 QQ for Linux，不过不久后便被放弃</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7844fee593a.png" alt="VirtualBox_Linux Deepin_27_01_2018_19_36_56.png"></p>
+<blockquote>
+<p>预装了 Wine 全套，显然是为从 Windows 过渡准备的——Deepin 的这一点到今天都没变</p>
+<p>然后 Deepin 就踏上了倒腾 Wine 的不归路……</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7845a6d5524.png" alt="VirtualBox_Linux Deepin_27_01_2018_19_27_48.png"></p>
+<hr>
+<p>Hiweed 作为国内最早的社区发行版之一，在十多年前的蛮荒时代难得有完善的中文化。看看今天 StartOS 死、红旗绝，只剩下深之度活了下来……</p>
+<p><em>另：启动任何程序都奇慢无比，不知是不是个别问题</em></p>
+<h2 id="Debian-1-3-1"><a href="#Debian-1-3-1" class="headerlink" title="Debian 1.3.1"></a>Debian 1.3.1</h2><p>来源：<a href="https://github.com/rdebath/debian-bo" target="_blank" rel="noopener">GitHub</a></p>
+<p>（需要使用  <code>jigdo</code>  下载 / 或者说生成镜像）</p>
+<p><img src="https://i.loli.net/2018/02/05/5a784963f1e17.png" alt="深度截图_选择区域_20180203131609.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7849654c5bd.png" alt="深度截图_选择区域_20180203131716.png"> </p>
+<blockquote>
+<p>安装步骤一览……</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784964e76d8.png" alt="深度截图_选择区域_20180203131814.png"></p>
+<blockquote>
+<p>现在我都经常用的 cfdisk</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7849652e6ba.png" alt="深度截图_选择区域_20180203132738.png"></p>
+<blockquote>
+<p>ext2 格盘中……</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784964adbc0.png" alt="深度截图_选择区域_20180203134321.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a784abec9f23.png" alt="深度截图_选择区域_20180203134441.png"></p>
+<blockquote>
+<p>从“光驱”安装内核和基本系统</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784b10819ca.png" alt="深度截图_选择区域_20180203135402.png"></p>
+<blockquote>
+<p>那年头网络不发达，DNS 也要手动设置一下</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784b9e1dc10.png" alt="深度截图_选择区域_20180203135757.png"> </p>
+<blockquote>
+<p>Booting with LILO…</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784b9e85e39.png" alt="深度截图_选择区域_20180203135926.png"> </p>
+<blockquote>
+<p>像是账户这些次要的配置，是在安装完成后设置的</p>
+</blockquote>
+<hr>
+<p>离开地球表面前往更高维度空间的 Ian Murdock 当初不会想到 Debian 现在会有……</p>
+<p><img src="https://i.loli.net/2018/02/05/5a784e8545b75.png" alt="Screenshot_20180205-202918.png"></p>
+<p>……如此恐怖的<a href="https://github.com/fabiololix/linuxtimeline" target="_blank" rel="noopener">时间线图</a></p>
+<h2 id="Red-Hat-Linux-9"><a href="#Red-Hat-Linux-9" class="headerlink" title="Red Hat Linux 9"></a>Red Hat Linux 9</h2><p>来源：<a href="https://archive.org/details/redhat-9.0_release" target="_blank" rel="noopener">Archive.org</a></p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521b13b91.png" alt="深度截图_选择区域_20180128152544.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521f301e3.png" alt="深度截图_选择区域_20180128152707.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521db698a.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_28_00.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521deef8e.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_34_37.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7852db984fe.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_38_14.png"> </p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521c6ca26.png" alt="深度截图_选择区域_20180128153829.png"></p>
+<blockquote>
+<p>轶闻………</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a78521f67d80.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_40_19.png"></p>
+<blockquote>
+<p>总共三张盘，塞了一堆软件</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a78521c83b9c.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_52_09.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7853be35eb6.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_53_44.png"></p>
+<blockquote>
+<p>X 没出来？<strong>不要在意这些细节……</strong></p>
+</blockquote>
+<hr>
+<p>之所以选择 Red Hat Linux 9 而不是更早的版本，因为 Red Hat 9 影响力大到成了一个梗——用来嘲笑被同样古董的教材坑害的小白。</p>
+<p>Red Hat 9 之后，RHEL 和 Fedora Core 一分为二。</p>
+<h2 id="Fedora-7"><a href="#Fedora-7" class="headerlink" title="Fedora 7"></a>Fedora 7</h2><p>来源：<a href="http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/7/" target="_blank" rel="noopener">Fedora 官方归档</a></p>
+<p><em>不要问我为什么不用 Fedora Core </em></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7855d4b5559.png" alt="深度截图_选择区域_20180128103053.png"> </p>
+<p><img src="https://i.loli.net/2018/02/05/5a7855d6ac9ea.png" alt="VirtualBox_Fedora 7_28_01_2018_10_33_21.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7855d5c6a59.png" alt="VirtualBox_Fedora 7_28_01_2018_10_52_27.png"> </p>
+<blockquote>
+<p>安装过程与 Red Hat 9 大致相同，略过。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a785686b3c82.png" alt="VirtualBox_Fedora 7_28_01_2018_10_54_01.png"> </p>
+<p><img src="https://i.loli.net/2018/02/05/5a785686b5c10.png" alt="VirtualBox_Fedora 7_28_01_2018_10_54_17.png"></p>
+<blockquote>
+<p>启动中……</p>
+<p>此时我的表情只有</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7860e95049a.png" alt="IMG_20180205_210614.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7857f90dc32.png" alt="VirtualBox_Fedora 7_28_01_2018_10_56_31.png"></p>
+<blockquote>
+<p>同样是在安装完成后再进行细节配置</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7857fb5ff1e.png" alt="VirtualBox_Fedora 7_28_01_2018_11_02_48.png"></p>
+<blockquote>
+<p>GNOME 2.18 的凝视</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7857f991a26.png" alt="VirtualBox_Fedora 7_28_01_2018_11_05_11.png"></p>
+<blockquote>
+<p>“万恶之源”般的 SELinux</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7857fb6387e.png" alt="VirtualBox_Fedora 7_28_01_2018_11_13_45.png"> </p>
+<hr>
+<p>一转眼也十多年了，Fedora 也给 RHEL 当了十多年白老鼠了……</p>
+<h1 id="结"><a href="#结" class="headerlink" title="结"></a>结</h1><p>许多老古董比我都不知道老到哪里去，而我在 2016 年才开始接触 Linux 。</p>
+<p>虽说翻古董怀旧怀旧大概只有我这种闲人会这么干，不过却也倒有些乐趣。</p>
+<hr>
+<p><strong>Vol. 2 预订名单</strong></p>
+<p><em>更新时间：？？？</em></p>
+<ul>
+<li><p>Ubuntu <em>（未完成）</em></p>
+</li>
+<li><p>Mandrake / Mandriva <em>（未完成）</em></p>
+</li>
+<li><p>SUSE <em>[待定]</em></p>
+</li>
+<li><p>Slackware <em>[待定]</em></p>
+</li>
+<li><p>YlmfOS / StartOS <em>[待定]</em></p>
+</li>
+<li><p>Red Flag <em>[待定]</em></p>
+</li>
+</ul>
+<hr>
+<p>感谢 <a href="https://t.me/LetITFlyW" target="_blank" rel="noopener">LetITFlyW@Telegram</a> 和 <a href="https://t.me/iVanilla" target="_blank" rel="noopener">iVanilla@Telegram</a> 在个人频道的广告</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 计算机技术 </category>
+            
+            <category> Linux </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Deepin </tag>
+            
+            <tag> Debian </tag>
+            
+            <tag> Fedora </tag>
+            
+            <tag> Red Hat </tag>
+            
+            <tag> 虚拟机 </tag>
+            
+            <tag> 考古 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title><![CDATA[关于……]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="350" height="100" src="//music.163.com/outchain/player?type=2&id=17123397&auto=1&height=66"></iframe>
+
+<p>你好。我是 Yongmeng Ye</p>
+<blockquote>
+<p>正在使用的网名还有 Yongmeng / Yeyongmeng29 /…</p>
+<p>显然这都是我的真实姓名，但这些网名用了将近十年了，也懒得换了……</p>
+</blockquote>
+<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><ul>
+<li><p>福州人，高中</p>
+</li>
+<li><p><strong> 爱好 懒 </strong></p>
+</li>
+<li><p>Python（HelloWorld级）</p>
+</li>
+<li><p>Firefox 党，vim 党</p>
+</li>
+<li><p>openSUSE 用户</p>
+</li>
+</ul>
+<h2 id="关于-Y0ngm3ng"><a href="#关于-Y0ngm3ng" class="headerlink" title="关于 Y0ngm3ng"></a>关于 Y0ngm3ng</h2><p>一个以计算机技术为主的博客</p>
+<p>Y0ngm3ng 中的 “0” 和 “3” 是 “o” 和 “e” 的 <a href="https://zh.wikipedia.org/wiki/Leet" target="_blank" rel="noopener">Leet 转写</a></p>
+<blockquote>
+<p>去年中旬 ( 2017.7 ) 脑子一热，利用 GitHub Page（现在依然是）建立了 Y0ngm3ng</p>
+<p>然后出现了两个问题：</p>
+<ul>
+<li><p>我想写的东西往往已经存在许多资料了，遂开始无事可写，导致：</p>
+</li>
+<li><p>我自己都看不懂我写了啥，又导致：</p>
+</li>
+<li><p>我又开始无事可写……唉……</p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h2><p><em> 提供有偿的深夜陪聊<del>和代孕</del>服务，无偿的也可以（ </em></p>
+<ul>
+<li><p><a href="https://donate.unicef.org/donate/now" target="_blank" rel="noopener">付款通道一</a></p>
+</li>
+<li><p><a href="https://my.fsf.org/donate" target="_blank" rel="noopener">付款通道二</a></p>
+</li>
+<li><p><a href="https://t.me/Yeyongmeng29" target="_blank" rel="noopener">Telegram</a></p>
+</li>
+<li><p><a href="https://t.me/YongmengW" target="_blank" rel="noopener">Telegram 频道</a></p>
+</li>
+<li><p><a href="mailto: YongmengKennyYe@Protonmail.com" target="_blank" rel="noopener">YongmengKennyYe@Protonmail.com</a></p>
+</li>
+</ul>
+<hr>
+<h2 id="Avatar"><a href="#Avatar" class="headerlink" title="Avatar"></a>Avatar</h2><p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=50945552" target="_blank" rel="noopener">Pixiv 50945552</a> Huiro</p>
+<!---
+
+## Banner
+
+[Pixiv 61183750 sishenfan](http://www.pixiv.net/member_illust.php?mode=medium&illust_id=61183750)
+
+--->
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[tags]]></title>
+      <url>/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[WE ARE THE LIGHT]]></title>
+      <url>/links/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+  
+</search>

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+        Version: 1.2.0
+    -->
+    <script>
+window.lsVersion = "1.2.0",
+window.oldVersion = [
+    
+        
+            "0.2.0","0.0.1","0.1.0","1.0.0","1.0.1","1.1.0","1.1.1"
+        
+    
+]
+</script>
+
+    <!-- ### DNS Prefetch ### -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+<!-- Title -->
+<title>安装 Flatpak 格式的 Deepin 应用 | Y0ngm3ng</title>
+
+<!-- favicon -->
+<!-- Favicons -->
+
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.png">
+
+
+
+
+
+
+<!-- Android Chrome Color -->
+
+
+
+<meta name="format-detection" content="telephone=no">
+
+<!-- Description -->
+<meta name="description" content="
+
+Deepin 最近也是多灾多难，老板跑路（，新版本难产……">
+
+<!-- Keywords -->
+<meta name="keywords" content=",Deepin">
+
+<!-- Disable Fucking Bloody Baidu Tranformation -->
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!-- ### Import File ### -->
+    
+        <!-- spectre.css -->
+
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css">
+
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #3AC5BB;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #3AC5BB;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #3AC5BB;
+        opacity: 1;
+    }
+
+    .post-entry .card-body a {
+        color: #3AC5BB;
+    }
+
+    .avatar {
+        background: #3AC5BB;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #3AC5BB;
+    }
+
+    .navbar-link:hover {
+        color: #3AC5BB;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #3AC5BB;
+        border-color: #3AC5BB;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #3AC5BB;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style>
+
+<!-- style.css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/css/style.min.css">
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    
+        <link rel="stylesheet" href="/lib/prettify/themes/github-v2.min.css">
+    
+    <style>
+        pre.prettyprint {
+            padding: 4px 0 0 2px !important;
+        }
+
+        pre.prettyprint ol,
+        pre.prettyprint ul {
+            padding-left: 42px;
+        }
+
+        pre.prettyprint ol li {
+            background: transparent;
+        }
+
+        .prettyprint li.L0,
+        .prettyprint li.L1,
+        .prettyprint li.L2,
+        .prettyprint li.L3,
+        .prettyprint li.L4,
+        .prettyprint li.L5,
+        .prettyprint li.L6,
+        .prettyprint li.L7,
+        .prettyprint li.L8,
+        .prettyprint li.L9 {
+            
+            list-style-type: decimal !important;
+            
+        }
+    </style>
+
+
+
+
+
+
+    
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <!-- ### RSS ### -->
+    
+
+    <!-- ### WebApp ### -->
+    <meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Y0ngm3ng">
+<meta name="msapplication-starturl" content="http://ykye.top">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Y0ngm3ng">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Manifest Import -->
+
+<!-- Open Search -->
+
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    
+
+
+<meta property="og:title" content="安装 Flatpak 格式的 Deepin 应用 | Y0ngm3ng">
+
+<meta property="og:type" content="blog">
+<meta property="og:url" content="http://ykye.top/2018/install-dfpapp/">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006N1muNgy1ftavvdj22vj31400p0ne6.jpg">
+
+<meta property="og:description" content="
+
+Deepin 最近也是多灾多难，老板跑路（，新版本难产……">
+
+
+    <meta property="og:article:tag" content=",Deepin">
+
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+    <meta property="article:published_time" content="2018-07-15T13:50:12.000Z">
+    <meta property="article:modified_time" content="2018-07-15T13:50:12.000Z">
+
+
+<meta property="og:locale" content="zh-CN">
+
+
+    <!-- ### Analytics ### -->
+    
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-106603438-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://ykye.top/2018/install-dfpapp/">
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://ykye.top/2018/install-dfpapp/"
+    },
+    "headline": "安装 Flatpak 格式的 Deepin 应用",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://ykye.tophttps://ws1.sinaimg.cn/large/006N1muNgy1ftavvdj22vj31400p0ne6.jpg"
+    },
+    
+    "datePublished": "2018-07-15T13:50:12.000Z",
+    "dateModified": "2018-09-16T12:31:28.605Z",
+    "author": {
+        "@type": "Person",
+        "name": "Yongmeng Ye",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://ykye.top/img/avatar.png"
+        },
+        "description": ""
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Y0ngm3ng",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://ykye.top/img/favicon.png"
+        }
+    },
+    "keywords": ",Deepin",
+    "description": "
+
+Deepin 最近也是多灾多难，老板跑路（，新版本难产……"
+}
+</script>
+
+
+    <!-- ### Custom Head ### -->
+    
+
+
+</head>
+
+    <body>
+        
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Y0ngm3ng</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                not sylveon
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+    
+        <a href="/about/" class="navbar-link">关于</a>
+    
+        <a href="/links/" class="navbar-link">链接</a>
+    
+    
+        
+<div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Y0ngm3ng&url=http://ykye.top&pic=http://ykye.top/img/favicon.png&searchPic=false&style=simple" target="_blank" rel="noopener noreferrer nofollow">分享到微博</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Y0ngm3ng&url=http://ykye.top&via=Yongmeng Ye" target="_blank" rel="noopener noreferrer nofollow">分享到 Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+
+        <!-- Share Google+ -->
+        
+
+        <!-- Share LinkedIn -->
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Y0ngm3ng&title=安装 Flatpak 格式的 Deepin 应用&summary=&pics=http://ykye.top/img/favicon.png&url=http://ykye.top/2018/install-dfpapp/index.html" target="_blank" rel="noopener noreferrer nofollow"> 分享到 QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://ykye.top/2018/install-dfpapp/index.html&text=安装 Flatpak 格式的 Deepin 应用" target="_blank" rel="noopener noreferrer nofollow">分享到 Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB30lEQVR42u3b0WrDQAxE0fz/T7dPhVAkzWgxrT25fgk4ifcE1lpJ3ry+bni8QIECBapAvYbj5/3utfp89VlnHFBZqHLS/TpfXeT9fIXogN04oLJQ3QSvBu4Gqq4x3SCgPhNVDawCYzmJQYEaFt5q8GkxB/WZqG6h7AbvBpuC5mVZAqjbo04Lh+3rn1QzoP4dJZsOi6A5Tf5Luy6gbo2akjg1MdV33B8GKg/lJnqbhblrhkw3AKgs1NSsUI0PVbA6BS2oLNSYzC8baaqxNjZ7QcWg3IdBXZCdile3aAWVh+oupgoA1ex3wKCyUN2gKrGbEsGpeLAWZFCRqE2jwg26q64LqMeiTie0GzTVDQEqD+UuzJsHSFMQHc+DikC5Dw+7Ca4SOacBAiobNTUy1EWnptvxggzqkahuYT4pLlQhajc4QD0e5TQyVMPeTf7aHwkqAuUEPDdJO2nEgspGOY0N1cyYEj35AABUBEoVlG4B6hQbsvkGKgIlk3mxQeeqjRKgclDuhmYn8XMK3FV3GNRjUdbmGONQiZ4MzKCiUOpB0QR2G/nrXdagIlFuAFXJ4FHwBBWLUkmc+2cLdX1QWSh3Am834LibeEBloZwJuQqCRhC1m2agHoe60wEKFChQb8c3c4n/v3VipRwAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    
+    
+
+
+<div class="post-container">
+    <div id="post-card" class="card">
+        
+            <!-- # Post Thumbnail # -->
+            <div class="card-image" style="background-image: url('https://ws1.sinaimg.cn/large/006N1muNgy1ftavvdj22vj31400p0ne6.jpg');"></div>
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">安装 Flatpak 格式的 Deepin 应用</h1>
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb" src="/img/avatar.png" alt="Yongmeng Ye's Avatar">
+        <span>2018-07-15</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/计算机技术/">计算机技术</a><span class="suka-devide-dot"></span><a class="category-link" href="/categories/计算机技术/Linux/">Linux</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            
+<div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">分享本文</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=安装 Flatpak 格式的 Deepin 应用&url=http://ykye.top/2018/install-dfpapp/index.html&pic=http://ykye.top/img/favicon.png&searchPic=false&style=simple" target="_blank" rel="noopener noreferrer nofollow">分享到微博</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=安装 Flatpak 格式的 Deepin 应用&url=http://ykye.top/2018/install-dfpapp/index.html&via=Yongmeng Ye" target="_blank" rel="noopener noreferrer nofollow">分享到 Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Y0ngm3ng&title=Y0ngm3ng&summary=&pics=http://ykye.top/img/favicon.png&url=http://ykye.top" target="_blank" rel="noopener noreferrer nofollow"> 分享到 QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://ykye.top&text=Y0ngm3ng" target="_blank" rel="noopener noreferrer nofollow">分享到 Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB30lEQVR42u3b0WrDQAxE0fz/T7dPhVAkzWgxrT25fgk4ifcE1lpJ3ry+bni8QIECBapAvYbj5/3utfp89VlnHFBZqHLS/TpfXeT9fIXogN04oLJQ3QSvBu4Gqq4x3SCgPhNVDawCYzmJQYEaFt5q8GkxB/WZqG6h7AbvBpuC5mVZAqjbo04Lh+3rn1QzoP4dJZsOi6A5Tf5Luy6gbo2akjg1MdV33B8GKg/lJnqbhblrhkw3AKgs1NSsUI0PVbA6BS2oLNSYzC8baaqxNjZ7QcWg3IdBXZCdile3aAWVh+oupgoA1ex3wKCyUN2gKrGbEsGpeLAWZFCRqE2jwg26q64LqMeiTie0GzTVDQEqD+UuzJsHSFMQHc+DikC5Dw+7Ca4SOacBAiobNTUy1EWnptvxggzqkahuYT4pLlQhajc4QD0e5TQyVMPeTf7aHwkqAuUEPDdJO2nEgspGOY0N1cyYEj35AABUBEoVlG4B6hQbsvkGKgIlk3mxQeeqjRKgclDuhmYn8XMK3FV3GNRjUdbmGONQiZ4MzKCiUOpB0QR2G/nrXdagIlFuAFXJ4FHwBBWLUkmc+2cLdX1QWSh3Am834LibeEBloZwJuQqCRhC1m2agHoe60wEKFChQb8c3c4n/v3VipRwAAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                            <div id="post-toc">
+                                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#正文"><span class="post-toc-number">1.</span> <span class="post-toc-text">正文</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#准备工作"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">准备工作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装-Deepin-Runtime"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安装 Deepin Runtime</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装应用"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">安装应用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#运行"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">运行</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#附"><span class="post-toc-number">2.</span> <span class="post-toc-text">附</span></a></li></ol>
+                            </div>
+                        
+                    
+                    <article id="post-content">
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="350" height="100" src="//music.163.com/outchain/player?type=2&id=463268241&auto=1&height=66"></iframe>
+
+<p>Deepin 最近也是多灾多难，<del>老板跑路（，</del>新版本难产……</p>
+<a id="more"></a>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>话说 Deepin 团队已经使用 <a href="https://flatpak.org/" target="_blank" rel="noopener">Flatpak</a> 封装自家应用，这无疑极大方便了其他发行版用户。但是 Deepin 没有直接提供 Flatpak 源等等，所以想要安装还是要自己动手。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>好一点的网络</li>
+<li><a href="https://flatpak.org/setup/" target="_blank" rel="noopener">安装了 Flatpak</a> 的 Linux 发行版 (x86_64)</li>
+<li>洗把脸</li>
+</ul>
+<h2 id="安装-Deepin-Runtime"><a href="#安装-Deepin-Runtime" class="headerlink" title="安装 Deepin Runtime"></a>安装 Deepin Runtime</h2><p>Flatpak 应用运行需要一套运行时（Runtime）作为基础环境，Freedesktop、GNOME、KDE <a href="http://docs.flatpak.org/en/latest/available-runtimes.html" target="_blank" rel="noopener">都做了一套</a>供 GTK/Qt 等应用开发者选用。Deepin 则自己做了一套。</p>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/deepin-fprt-com.deepin.runtime-15.5/" target="_blank" rel="noopener">下载</a> <code>com.deepin.platform-15.5_1.0.4+r2_amd64.deb</code> <code>deepin-fprt-org.deepin.flatdeb.base.platform-15.5_1.0.5+r7_amd64.deb</code>，解压出打包好的 <code>bundle</code> 文件 （版本号可能不同）</p>
+<p>（以下均以 TUNA 镜像源为例，官方源实在无法直视）</p>
+<p><img src="https://i.jpg.dog/img/801c7d0df307487125b66dcbd954267e.png" alt="801c7d0df307487125b66dcbd954267e.png"></p>
+<p>然后安装</p>
+<pre><code class="bash">flatpak install bundle --bundle
+</code></pre>
+<h2 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h2><p>Deepin 打包好的应用包括：</p>
+<ul>
+<li>深度日历</li>
+<li>深度计算器</li>
+<li>深度看图</li>
+<li>深度影院</li>
+<li>深度音乐</li>
+<li>深度录屏</li>
+<li>深度录音</li>
+<li>深度截图</li>
+<li>还有好多……</li>
+<li>我列不完了……</li>
+<li>Shadowsocks-Qt5 （？？？）</li>
+</ul>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/</a></p>
+<p>Ctrl + F <code>deepin-fpapp</code></p>
+<p>这里以「深度日历」为例</p>
+<hr>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/deepin-fpapp-org.deepin.flatdeb.deepin-calendar/" target="_blank" rel="noopener">下载</a> <code>deepin-fpapp-org.deepin.flatdeb.deepin-calendar_1.2.3+r1_amd64.deb</code></p>
+<p>依照上文，解压出 <code>bundle</code>，如法炮制</p>
+<pre><code class="bash">flatpak install bundle --bundle
+Installing: org.deepin.flatdeb.deepin-calendar/x86_64/master from bundle bundle
+Now at 38c791026f75.
+</code></pre>
+<p><em><code>org.deepin.flatdeb.deepin-calendar</code> 是应用包名</em></p>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>安装完的 Flatpak 应用可以通过命令行运行</p>
+<pre><code class="bash">flatpak run org.deepin.flatdeb.deepin-calendar
+</code></pre>
+<p>每次都通过命令启动肯定会让人疯掉，显然需要写一个 <code>.desktop</code> 文件，或者用类似 KDE Menu Editor 这样的工具来新建一个</p>
+<pre><code>[Desktop Entry]
+Exec=flatpak run org.deepin.flatdeb.deepin-calendar
+...
+</code></pre><p>Deepin 应用的图标可以在<a href="https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/deepin-icon-theme/" target="_blank" rel="noopener">这里</a>找到</p>
+<hr>
+<blockquote>
+<p>openSUSE Tumbleweed<br>KDE Plasma 5.13.2</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/07/15/5b4b488998855.png" alt="Screenshot_20180715_211032.png"></p>
+<blockquote>
+<p>深度音乐</p>
+</blockquote>
+<p><img src="https://i.jpg.dog/img/5df278132a1b57c329b1a28f73fdcb4c.png" alt="5df278132a1b57c329b1a28f73fdcb4c.png"></p>
+<blockquote>
+<p>深度取色器 （Plasma 有更方便的 #斜眼）</p>
+</blockquote>
+<p><img src="https://i.jpg.dog/img/a33a2bb704a933eaca84a9c41604fee1.png" alt="a33a2bb704a933eaca84a9c41604fee1.png"></p>
+<blockquote>
+<p>深度日历</p>
+</blockquote>
+<p>……</p>
+<h1 id="附"><a href="#附" class="headerlink" title="附"></a>附</h1><ul>
+<li>Deepin 提到未来可能会建立 Flatpak 源，显然这又是一大张饼（</li>
+<li>我曾考虑过在 <a href="https://flathub.org/home" target="_blank" rel="noopener">Flathub</a> 上打包一些 Deepin 应用，但 Flathub 原则上只允许开发者本人来维护……</li>
+</ul>
+
+                    </article>
+                    
+    <blockquote class="post-license">
+        <p>
+            <strong>本文作者&nbsp;:&nbsp;Yongmeng Ye</strong>
+            <br>
+            <strong>
+            
+                 Y0ngm3ng 所有原创内容 使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">CC BY-SA 4.0</a> 协议授权 
+            </strong>
+            <br>
+            <strong>本文链接&nbsp;:&nbsp;</strong><a href="http://ykye.top/2018/install-dfpapp/">http://ykye.top/2018/install-dfpapp/</a>
+        </p>
+    </blockquote>
+
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
+    <script>
+        var dateUpdate = Date.parse("2018-09-16");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2018-07-15T13:50:12.000Z" itemprop="datePublished">2018-07-15</time>
+
+    , 最后修改于&nbsp;<time datetime="2018-09-16T12:31:28.605Z" itemprop="dateModified">2018-09-16</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+
+<a class="post-categories-list-item" href='/categories/计算机技术/'>计算机技术</a>
+
+<a class="post-categories-list-item" href='/categories/计算机技术/Linux/'>Linux</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+
+<a class="post-tags-list-item" href='/tags/Flatpak/'>#&nbsp;Flatpak</a>
+
+<a class="post-tags-list-item" href='/tags/Deepin/'>#&nbsp;Deepin</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                
+<div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2018/evaluating-mydataismydata-beta/">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Your data is YOUR data - /e/ Beta 体验</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2018/about-ykye-top/">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">HTTPS://YKYe.top</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                        <div class="card-footer post-comment">
+                            <style>
+    a.disqus-author,
+    a.disqus-author:hover,
+    a.disqus-author:visited {
+        color: #50596c;
+    }
+
+    #disqus-switch {
+        margin-bottom: 1rem;
+    }
+</style>
+
+<div class="comments" id="comments">
+    <div id="disqus_thread" class="disqus-proxy-list"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.3"></script>
+<script>
+function setLocalStorage(s, e) {
+    try {
+        localStorage.setItem(s, e)
+    } catch (o) {
+        console.log(o), console.log("Failed to set localStorage item")
+    }
+}
+function proxyMode() {
+    setLocalStorage("disqusMode", "proxy"), $("#disqus_thread").empty(), $("#disqus-switch").remove(), $("#comments").prepend('<div id="disqus-switch"><button class="disqus-switch-button btn btn-primary" id="disqus-switch-to-direct" data-current-mode="proxy">加载完整评论（请确保 disqus 可以正常加载）</button></div>'), $("#disqus_thread").append('<div class="disqus-loading h5">Loading...</div>'), $.ajax({
+        type: "GET",
+        url: disqus_proxy + "threads/list.json?forum=" + disqus_shortname + "&thread=ident:" + disqus_identifier + "&api_key=" + disqus_apikey,
+        contentType: "application/json; charset=utf-8",
+        async: !0,
+        success: function(s) {
+            if (1 != s.response.length) return !1;
+            var e = s.response[0].id;
+            $.ajax({
+                type: "GET",
+                url: disqus_proxy + "posts/list.json?forum=" + disqus_shortname + "&thread=" + e + "&api_key=" + disqus_apikey,
+                contentType: "application/json; charset=utf-8",
+                async: !0,
+                success: function(s) {
+                    if (0 != s.response.length && "undefined" != typeof s.response) {
+                        var e = '';
+                        for (var o in s.response) {
+                            if (s.response[o].media.length > 0) for (var t in s.response[o].media) s.response[o].message += '<a href="' + s.response[o].media[t].location + '" target="_blank" rel="nofollow"><img src="' + s.response[o].media[t].location + '" alt="图片"></a>';
+                            e += '<div class="tile"><div class="tile-icon"><figure class="avatar"><a href="' + s.response[o].author.profileUrl + '" class="disqus-user" target="_blank" rel="nofollow"><img src="' + s.response[o].author.avatar.cache + '" alt="Avatar"></a></figure></div>'
+                            e += '<div class="tile-content"><p class="tile-title text-bold mb-0 disqus-author"><a href="' + s.response[o].author.profileUrl + '" class="disqus-author" target="_blank" rel="nofollow">' + s.response[o].author.name + '</a></p><p class="tile-subtitle small mb-1 text-gray">' + s.response[o].createdAt + '</p><p class="tile-subtitle mb-2">' + s.response[o].message + '</p></div></div>'
+                        }
+                        $("#disqus_thread").empty(), $("#disqus_thread").append(e), s.cursor.more && $("#comments").append('<div id="disqus-loadmore" class="text-center"><button id="disqus-loadmore-button" class="btn btn-primary">Load more</button></div>')
+                    } else $(".disqus-loading").text("Um...Nothing yet")
+                },
+                error: function(s) {
+                    console.log(s)
+                }
+            })
+        },
+        error: function(s) {
+            console.log(s)
+        }
+    })
+}
+function directMode(s) {
+    $("#disqus_thread").empty(), $("#disqus-switch").remove(), $("#disqus-loadmore").remove(), $("#comments").prepend('<div id="disqus-switch" class="text-center"><button class="disqus-switch-button btn" id="disqus-switch-to-proxy" data-current-mode="direct">加载评论基本模式</button></div>');
+    var e = document.createElement("script");
+    e.type = "text/javascript", e.async = !0, e.src = "//" + disqus_shortname + ".disqus.com/" + s, (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(e), setLocalStorage("disqusMode", "direct")
+}
+var disqus_shortname = "yongmeng",
+    disqus_apikey = "E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F"
+    disqus_proxy = "https://cors-anywhere.herokuapp.com/disqus.com/api/3.0/"
+    disqus_identifier = "http://ykye.top/2018/install-dfpapp/",
+    disqus_title = "安装 Flatpak 格式的 Deepin 应用",
+    disqus_url = "http://ykye.top/2018/install-dfpapp/";
+$("body").on("click", "#disqus-switch-to-proxy", function() {
+    proxyMode()
+}), $("body").on("click", "#disqus-switch-to-direct", function() {
+    directMode("embed.js")
+}), $(window).on("scroll.comments", function() {
+    if ($(window).scrollTop() + $(window).height() > .7 * $(document).height()) {
+        try {
+            "proxy" == localStorage.getItem("disqusMode") ? proxyMode() : directMode("embed.js")
+        } catch (s) {
+            console.log(s), console.log("Failed to get localStorage item"), proxyMode()
+        }
+        $(window).off("scroll.comments")
+    }
+})
+</script>
+
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span data-year></span>
+        <a class="footer-copyright-a" href="http://ykye.top">Y0ngm3ng</a>
+    </p>
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+        
+             Just a little time <br> No, your addiction's not a crime <br> It's just a smaller part of who <br> You want to become in the end. <br> <br> TRISTAM - CRAVE <br><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noreferrer"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg"  alt="CC-BY-SA" /></a>
+        
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+            
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+        
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="noopener">Suka</a>
+    </p>
+</footer>
+
+        
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+
+
+    /* Copyright */
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.querySelector('span[data-year]')
+    
+        copyrightContent.textContent = copyrightNow
+    
+
+
+
+/* Cnosole Log */
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.2.0 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+</script>
+
+<!-- vanilla-lazyload -->
+
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+
+
+    <!-- Busuanzi -->
+    
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+
+
+    <!-- prettify -->
+    
+    
+        <script src="/lib/prettify/prettify.js"></script>
+    
+    <script>
+        for (var i = 0; i < (document.querySelectorAll('pre') || []).length; i += 1) {
+            document.querySelectorAll('pre')[i].classList.add('prettyprint');
+            document.querySelectorAll('pre')[i].classList.add('linenums');
+        }
+        prettyPrint();
+    </script>
+
+
+
+
+<!-- gallery.js -->
+
+
+<!-- Comment -->
+
+    
+        
+    
+
+
+<!-- ### Custom Footer ### -->
+
+
+    </body>
+
+</html>

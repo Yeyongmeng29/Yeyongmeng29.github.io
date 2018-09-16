@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+        Version: 1.2.0
+    -->
+    <script>
+window.lsVersion = "1.2.0",
+window.oldVersion = [
+    
+        
+            "0.2.0","0.0.1","0.1.0","1.0.0","1.0.1","1.1.0","1.1.1"
+        
+    
+]
+</script>
+
+    <!-- ### DNS Prefetch ### -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+<!-- Title -->
+<title>一些古董 Linux 发行版们 Vol. 1 | Y0ngm3ng</title>
+
+<!-- favicon -->
+<!-- Favicons -->
+
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.png">
+
+
+
+
+
+
+<!-- Android Chrome Color -->
+
+
+
+<meta name="format-detection" content="telephone=no">
+
+<!-- Description -->
+<meta name="description" content="上个月突然心血来潮，，从 1 月 27 号开始陆续挖了一些古董级 Linux 发行版出来考古。
+
+其实还不算古董，真的古董不是还没去挖就是恐怕连尸块都找不着了……
+
+现在把这次考古的部分内容整理出来，大概只有我这种闲人会干这种事。">
+
+<!-- Keywords -->
+<meta name="keywords" content=",考古">
+
+<!-- Disable Fucking Bloody Baidu Tranformation -->
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!-- ### Import File ### -->
+    
+        <!-- spectre.css -->
+
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css">
+
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #3AC5BB;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #3AC5BB;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #3AC5BB;
+        opacity: 1;
+    }
+
+    .post-entry .card-body a {
+        color: #3AC5BB;
+    }
+
+    .avatar {
+        background: #3AC5BB;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #3AC5BB;
+    }
+
+    .navbar-link:hover {
+        color: #3AC5BB;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #3AC5BB;
+        border-color: #3AC5BB;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #3AC5BB;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style>
+
+<!-- style.css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/css/style.min.css">
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    
+        <link rel="stylesheet" href="/lib/prettify/themes/github-v2.min.css">
+    
+    <style>
+        pre.prettyprint {
+            padding: 4px 0 0 2px !important;
+        }
+
+        pre.prettyprint ol,
+        pre.prettyprint ul {
+            padding-left: 42px;
+        }
+
+        pre.prettyprint ol li {
+            background: transparent;
+        }
+
+        .prettyprint li.L0,
+        .prettyprint li.L1,
+        .prettyprint li.L2,
+        .prettyprint li.L3,
+        .prettyprint li.L4,
+        .prettyprint li.L5,
+        .prettyprint li.L6,
+        .prettyprint li.L7,
+        .prettyprint li.L8,
+        .prettyprint li.L9 {
+            
+            list-style-type: decimal !important;
+            
+        }
+    </style>
+
+
+
+
+
+
+    
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <!-- ### RSS ### -->
+    
+
+    <!-- ### WebApp ### -->
+    <meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Y0ngm3ng">
+<meta name="msapplication-starturl" content="http://ykye.top">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Y0ngm3ng">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Manifest Import -->
+
+<!-- Open Search -->
+
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    
+
+
+<meta property="og:title" content="一些古董 Linux 发行版们 Vol. 1 | Y0ngm3ng">
+
+<meta property="og:type" content="blog">
+<meta property="og:url" content="http://ykye.top/2018/some-antique-linux-vol1/">
+<meta property="og:image" content="http://ykye.top/img/favicon.png">
+
+<meta property="og:description" content="上个月突然心血来潮，，从 1 月 27 号开始陆续挖了一些古董级 Linux 发行版出来考古。
+
+其实还不算古董，真的古董不是还没去挖就是恐怕连尸块都找不着了……
+
+现在把这次考古的部分内容整理出来，大概只有我这种闲人会干这种事。">
+
+
+    <meta property="og:article:tag" content=",考古">
+
+
+<meta name="twitter:card" content="summary">
+
+
+    <meta property="article:published_time" content="2018-02-05T14:19:38.000Z">
+    <meta property="article:modified_time" content="2018-02-05T14:19:38.000Z">
+
+
+<meta property="og:locale" content="zh-CN">
+
+
+    <!-- ### Analytics ### -->
+    
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-106603438-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://ykye.top/2018/some-antique-linux-vol1/">
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://ykye.top/2018/some-antique-linux-vol1/"
+    },
+    "headline": "一些古董 Linux 发行版们 Vol. 1",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://ykye.top/img/favicon.png"
+    },
+    
+    "datePublished": "2018-02-05T14:19:38.000Z",
+    "dateModified": "2018-09-16T12:31:28.605Z",
+    "author": {
+        "@type": "Person",
+        "name": "Yongmeng Ye",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://ykye.top/img/avatar.png"
+        },
+        "description": ""
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Y0ngm3ng",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://ykye.top/img/favicon.png"
+        }
+    },
+    "keywords": ",考古",
+    "description": "上个月突然心血来潮，，从 1 月 27 号开始陆续挖了一些古董级 Linux 发行版出来考古。
+
+其实还不算古董，真的古董不是还没去挖就是恐怕连尸块都找不着了……
+
+现在把这次考古的部分内容整理出来，大概只有我这种闲人会干这种事。"
+}
+</script>
+
+
+    <!-- ### Custom Head ### -->
+    
+
+
+</head>
+
+    <body>
+        
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Y0ngm3ng</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                not sylveon
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+    
+        <a href="/about/" class="navbar-link">关于</a>
+    
+        <a href="/links/" class="navbar-link">链接</a>
+    
+    
+        
+<div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Y0ngm3ng&url=http://ykye.top&pic=http://ykye.top/img/favicon.png&searchPic=false&style=simple" target="_blank" rel="noopener noreferrer nofollow">分享到微博</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Y0ngm3ng&url=http://ykye.top&via=Yongmeng Ye" target="_blank" rel="noopener noreferrer nofollow">分享到 Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+
+        <!-- Share Google+ -->
+        
+
+        <!-- Share LinkedIn -->
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Y0ngm3ng&title=一些古董 Linux 发行版们 Vol. 1&summary=&pics=http://ykye.top/img/favicon.png&url=http://ykye.top/2018/some-antique-linux-vol1/index.html" target="_blank" rel="noopener noreferrer nofollow"> 分享到 QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://ykye.top/2018/some-antique-linux-vol1/index.html&text=一些古董 Linux 发行版们 Vol. 1" target="_blank" rel="noopener noreferrer nofollow">分享到 Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB2UlEQVR42u3ay47DIBBEUf//T2dWkTIWVFWTLKB9vcnLso8l0kDB9drwuECBAgVqgLrEcT/n/f7fhSbnzX6T9wHVBjVsdIOLq5uOzh29yvuAaoW6N7zR9/ffZ5/v+OQ+oJ6FGv2uznENHhSoUaN1DV8hQT0DpTpWNchTcPX5q1ECqO1RakD/y9efzWZAbY2yocOs0IUNf9bAv0pdQG2NSgf+riOeodUfClRv1EoBnH03wiYhHKgeKNcw1UWrgZstuqBaoFQxTIGqyCYFGFQvlOswXeerOuTqABBUL5QLN9zkYWUAWJqMgjoKlTTuNHxNJq1R8QR1LKqyOG0vGiBlYQXVDpUuVLvJanUACaoXqhpSpAGHGyDagAPU8SjXQacTTjeJkI0eVBuUmlymHa8L9pcDDlDHo9QgzBVa95BLqQuo41CuUK500gks3oAD6khUUhgrmx7STj4OOEAdiUrCLxfMroZwoHqj0k3x6fdJUAKqFyopgpXFIjuQUw8NqgUq2WjsiqLbFJiEtqB6oZLFbfcASTEF9SyUa5huwVItJiV/IlDPQ7nJZLKZwk1yQYFKNkak4QaofigX9ruFIBWwJYvgoHqh0s2A5c0PYWACqhdqpwMUKFCgPo4/8dNRYNSxfQQAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    
+    
+
+
+<div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">一些古董 Linux 发行版们 Vol. 1</h1>
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb" src="/img/avatar.png" alt="Yongmeng Ye's Avatar">
+        <span>2018-02-05</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/计算机技术/">计算机技术</a><span class="suka-devide-dot"></span><a class="category-link" href="/categories/计算机技术/Linux/">Linux</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            
+<div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">分享本文</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=一些古董 Linux 发行版们 Vol. 1&url=http://ykye.top/2018/some-antique-linux-vol1/index.html&pic=http://ykye.top/img/favicon.png&searchPic=false&style=simple" target="_blank" rel="noopener noreferrer nofollow">分享到微博</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=一些古董 Linux 发行版们 Vol. 1&url=http://ykye.top/2018/some-antique-linux-vol1/index.html&via=Yongmeng Ye" target="_blank" rel="noopener noreferrer nofollow">分享到 Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Y0ngm3ng&title=Y0ngm3ng&summary=&pics=http://ykye.top/img/favicon.png&url=http://ykye.top" target="_blank" rel="noopener noreferrer nofollow"> 分享到 QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://ykye.top&text=Y0ngm3ng" target="_blank" rel="noopener noreferrer nofollow">分享到 Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB2UlEQVR42u3ay47DIBBEUf//T2dWkTIWVFWTLKB9vcnLso8l0kDB9drwuECBAgVqgLrEcT/n/f7fhSbnzX6T9wHVBjVsdIOLq5uOzh29yvuAaoW6N7zR9/ffZ5/v+OQ+oJ6FGv2uznENHhSoUaN1DV8hQT0DpTpWNchTcPX5q1ECqO1RakD/y9efzWZAbY2yocOs0IUNf9bAv0pdQG2NSgf+riOeodUfClRv1EoBnH03wiYhHKgeKNcw1UWrgZstuqBaoFQxTIGqyCYFGFQvlOswXeerOuTqABBUL5QLN9zkYWUAWJqMgjoKlTTuNHxNJq1R8QR1LKqyOG0vGiBlYQXVDpUuVLvJanUACaoXqhpSpAGHGyDagAPU8SjXQacTTjeJkI0eVBuUmlymHa8L9pcDDlDHo9QgzBVa95BLqQuo41CuUK500gks3oAD6khUUhgrmx7STj4OOEAdiUrCLxfMroZwoHqj0k3x6fdJUAKqFyopgpXFIjuQUw8NqgUq2WjsiqLbFJiEtqB6oZLFbfcASTEF9SyUa5huwVItJiV/IlDPQ7nJZLKZwk1yQYFKNkak4QaofigX9ruFIBWwJYvgoHqh0s2A5c0PYWACqhdqpwMUKFCgPo4/8dNRYNSxfQQAAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                            <div id="post-toc">
+                                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#正文"><span class="post-toc-number">1.</span> <span class="post-toc-text">正文</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于主机"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">关于主机</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Linux-Deepin-9-12"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Linux Deepin 9.12</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Debian-1-3-1"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Debian 1.3.1</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Red-Hat-Linux-9"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Red Hat Linux 9</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Fedora-7"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Fedora 7</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#结"><span class="post-toc-number">2.</span> <span class="post-toc-text">结</span></a></li></ol>
+                            </div>
+                        
+                    
+                    <article id="post-content">
+                        <p>上个月突然心血来潮，，从 1 月 27 号开始陆续挖了一些古董级 Linux 发行版出来考古。</p>
+<blockquote>
+<p><em>其实还不算古董，真的古董不是还没去挖就是恐怕连尸块都找不着了……</em></p>
+</blockquote>
+<p>现在把这次考古的部分内容整理出来，大概只有我这种闲人会干这种事。</p>
+<a id="more"></a>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>本次考古：</p>
+<ul>
+<li>Linux Deepin 9.12 </li>
+</ul>
+<blockquote>
+<p>Hiweed 就属于那种尸块都找不着的……</p>
+</blockquote>
+<ul>
+<li><p>Fedora 7 </p>
+</li>
+<li><p>Debian 1.3.1</p>
+</li>
+</ul>
+<blockquote>
+<p>Debian 1.1 手头倒也有，不过 QEMU 我不太会用</p>
+</blockquote>
+<ul>
+<li>Red Hat Linux 9</li>
+</ul>
+<h2 id="关于主机"><a href="#关于主机" class="headerlink" title="关于主机"></a>关于主机</h2><p>Manjaro / Deepin DE，使用 VirtualBox。配置稀烂不详列。</p>
+<p><img src="https://i.loli.net/2018/02/05/5a783f2ce9354.png" alt="深度截图_20180127190310.png"></p>
+<blockquote>
+<p>有多烂呢，就是这么烂的……</p>
+</blockquote>
+<h2 id="Linux-Deepin-9-12"><a href="#Linux-Deepin-9-12" class="headerlink" title="Linux Deepin 9.12"></a>Linux Deepin 9.12</h2><p>来源：<a href="http://cdimage.deepin.com/releases-archive/9.12/" target="_blank" rel="noopener">Deepin 官方归档</a><br><img src="https://i.loli.net/2018/02/05/5a78409671628.png" alt="深度截图_选择区域_20180127184429.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7840a09f69f.png" alt="深度截图_20180127184500.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7840a2d4e7d.png" alt="深度截图_20180127184544.png"> </p>
+<p><img src="https://i.loli.net/2018/02/05/5a7841d32b573.png" alt="VirtualBox_Linux Deepin_27_01_2018_18_53_20.png"> </p>
+<blockquote>
+<p>此时 Deepin 仍基于 Ubuntu ，配 Xfce4</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7842dd8f524.png" alt="VirtualBox_Linux Deepin_27_01_2018_18_59_13.png"></p>
+<blockquote>
+<p>安装完成</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784365e8bb5.png" alt="VirtualBox_Linux Deepin_27_01_2018_19_14_57.png"> </p>
+<blockquote>
+<p>WebQQ 的凝视</p>
+<p>腾讯曾于 2008 年发布 QQ for Linux，不过不久后便被放弃</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7844fee593a.png" alt="VirtualBox_Linux Deepin_27_01_2018_19_36_56.png"></p>
+<blockquote>
+<p>预装了 Wine 全套，显然是为从 Windows 过渡准备的——Deepin 的这一点到今天都没变</p>
+<p>然后 Deepin 就踏上了倒腾 Wine 的不归路……</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7845a6d5524.png" alt="VirtualBox_Linux Deepin_27_01_2018_19_27_48.png"></p>
+<hr>
+<p>Hiweed 作为国内最早的社区发行版之一，在十多年前的蛮荒时代难得有完善的中文化。看看今天 StartOS 死、红旗绝，只剩下深之度活了下来……</p>
+<p><em>另：启动任何程序都奇慢无比，不知是不是个别问题</em></p>
+<h2 id="Debian-1-3-1"><a href="#Debian-1-3-1" class="headerlink" title="Debian 1.3.1"></a>Debian 1.3.1</h2><p>来源：<a href="https://github.com/rdebath/debian-bo" target="_blank" rel="noopener">GitHub</a></p>
+<p>（需要使用  <code>jigdo</code>  下载 / 或者说生成镜像）</p>
+<p><img src="https://i.loli.net/2018/02/05/5a784963f1e17.png" alt="深度截图_选择区域_20180203131609.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7849654c5bd.png" alt="深度截图_选择区域_20180203131716.png"> </p>
+<blockquote>
+<p>安装步骤一览……</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784964e76d8.png" alt="深度截图_选择区域_20180203131814.png"></p>
+<blockquote>
+<p>现在我都经常用的 cfdisk</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7849652e6ba.png" alt="深度截图_选择区域_20180203132738.png"></p>
+<blockquote>
+<p>ext2 格盘中……</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784964adbc0.png" alt="深度截图_选择区域_20180203134321.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a784abec9f23.png" alt="深度截图_选择区域_20180203134441.png"></p>
+<blockquote>
+<p>从“光驱”安装内核和基本系统</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784b10819ca.png" alt="深度截图_选择区域_20180203135402.png"></p>
+<blockquote>
+<p>那年头网络不发达，DNS 也要手动设置一下</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784b9e1dc10.png" alt="深度截图_选择区域_20180203135757.png"> </p>
+<blockquote>
+<p>Booting with LILO…</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a784b9e85e39.png" alt="深度截图_选择区域_20180203135926.png"> </p>
+<blockquote>
+<p>像是账户这些次要的配置，是在安装完成后设置的</p>
+</blockquote>
+<hr>
+<p>离开地球表面前往更高维度空间的 Ian Murdock 当初不会想到 Debian 现在会有……</p>
+<p><img src="https://i.loli.net/2018/02/05/5a784e8545b75.png" alt="Screenshot_20180205-202918.png"></p>
+<p>……如此恐怖的<a href="https://github.com/fabiololix/linuxtimeline" target="_blank" rel="noopener">时间线图</a></p>
+<h2 id="Red-Hat-Linux-9"><a href="#Red-Hat-Linux-9" class="headerlink" title="Red Hat Linux 9"></a>Red Hat Linux 9</h2><p>来源：<a href="https://archive.org/details/redhat-9.0_release" target="_blank" rel="noopener">Archive.org</a></p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521b13b91.png" alt="深度截图_选择区域_20180128152544.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521f301e3.png" alt="深度截图_选择区域_20180128152707.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521db698a.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_28_00.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521deef8e.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_34_37.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7852db984fe.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_38_14.png"> </p>
+<p><img src="https://i.loli.net/2018/02/05/5a78521c6ca26.png" alt="深度截图_选择区域_20180128153829.png"></p>
+<blockquote>
+<p>轶闻………</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a78521f67d80.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_40_19.png"></p>
+<blockquote>
+<p>总共三张盘，塞了一堆软件</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a78521c83b9c.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_52_09.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7853be35eb6.png" alt="VirtualBox_Red Hat 9_28_01_2018_15_53_44.png"></p>
+<blockquote>
+<p>X 没出来？<strong>不要在意这些细节……</strong></p>
+</blockquote>
+<hr>
+<p>之所以选择 Red Hat Linux 9 而不是更早的版本，因为 Red Hat 9 影响力大到成了一个梗——用来嘲笑被同样古董的教材坑害的小白。</p>
+<p>Red Hat 9 之后，RHEL 和 Fedora Core 一分为二。</p>
+<h2 id="Fedora-7"><a href="#Fedora-7" class="headerlink" title="Fedora 7"></a>Fedora 7</h2><p>来源：<a href="http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/7/" target="_blank" rel="noopener">Fedora 官方归档</a></p>
+<p><em>不要问我为什么不用 Fedora Core </em></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7855d4b5559.png" alt="深度截图_选择区域_20180128103053.png"> </p>
+<p><img src="https://i.loli.net/2018/02/05/5a7855d6ac9ea.png" alt="VirtualBox_Fedora 7_28_01_2018_10_33_21.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7855d5c6a59.png" alt="VirtualBox_Fedora 7_28_01_2018_10_52_27.png"> </p>
+<blockquote>
+<p>安装过程与 Red Hat 9 大致相同，略过。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a785686b3c82.png" alt="VirtualBox_Fedora 7_28_01_2018_10_54_01.png"> </p>
+<p><img src="https://i.loli.net/2018/02/05/5a785686b5c10.png" alt="VirtualBox_Fedora 7_28_01_2018_10_54_17.png"></p>
+<blockquote>
+<p>启动中……</p>
+<p>此时我的表情只有</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7860e95049a.png" alt="IMG_20180205_210614.png"></p>
+<p><img src="https://i.loli.net/2018/02/05/5a7857f90dc32.png" alt="VirtualBox_Fedora 7_28_01_2018_10_56_31.png"></p>
+<blockquote>
+<p>同样是在安装完成后再进行细节配置</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7857fb5ff1e.png" alt="VirtualBox_Fedora 7_28_01_2018_11_02_48.png"></p>
+<blockquote>
+<p>GNOME 2.18 的凝视</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7857f991a26.png" alt="VirtualBox_Fedora 7_28_01_2018_11_05_11.png"></p>
+<blockquote>
+<p>“万恶之源”般的 SELinux</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/02/05/5a7857fb6387e.png" alt="VirtualBox_Fedora 7_28_01_2018_11_13_45.png"> </p>
+<hr>
+<p>一转眼也十多年了，Fedora 也给 RHEL 当了十多年白老鼠了……</p>
+<h1 id="结"><a href="#结" class="headerlink" title="结"></a>结</h1><p>许多老古董比我都不知道老到哪里去，而我在 2016 年才开始接触 Linux 。</p>
+<p>虽说翻古董怀旧怀旧大概只有我这种闲人会这么干，不过却也倒有些乐趣。</p>
+<hr>
+<p><strong>Vol. 2 预订名单</strong></p>
+<p><em>更新时间：？？？</em></p>
+<ul>
+<li><p>Ubuntu <em>（未完成）</em></p>
+</li>
+<li><p>Mandrake / Mandriva <em>（未完成）</em></p>
+</li>
+<li><p>SUSE <em>[待定]</em></p>
+</li>
+<li><p>Slackware <em>[待定]</em></p>
+</li>
+<li><p>YlmfOS / StartOS <em>[待定]</em></p>
+</li>
+<li><p>Red Flag <em>[待定]</em></p>
+</li>
+</ul>
+<hr>
+<p>感谢 <a href="https://t.me/LetITFlyW" target="_blank" rel="noopener">LetITFlyW@Telegram</a> 和 <a href="https://t.me/iVanilla" target="_blank" rel="noopener">iVanilla@Telegram</a> 在个人频道的广告</p>
+
+                    </article>
+                    
+    <blockquote class="post-license">
+        <p>
+            <strong>本文作者&nbsp;:&nbsp;Yongmeng Ye</strong>
+            <br>
+            <strong>
+            
+                 Y0ngm3ng 所有原创内容 使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">CC BY-SA 4.0</a> 协议授权 
+            </strong>
+            <br>
+            <strong>本文链接&nbsp;:&nbsp;</strong><a href="http://ykye.top/2018/some-antique-linux-vol1/">http://ykye.top/2018/some-antique-linux-vol1/</a>
+        </p>
+    </blockquote>
+
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
+    <script>
+        var dateUpdate = Date.parse("2018-09-16");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2018-02-05T14:19:38.000Z" itemprop="datePublished">2018-02-05</time>
+
+    , 最后修改于&nbsp;<time datetime="2018-09-16T12:31:28.605Z" itemprop="dateModified">2018-09-16</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+
+<a class="post-categories-list-item" href='/categories/计算机技术/'>计算机技术</a>
+
+<a class="post-categories-list-item" href='/categories/计算机技术/Linux/'>Linux</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+
+<a class="post-tags-list-item" href='/tags/Deepin/'>#&nbsp;Deepin</a>
+
+<a class="post-tags-list-item" href='/tags/Debian/'>#&nbsp;Debian</a>
+
+<a class="post-tags-list-item" href='/tags/Fedora/'>#&nbsp;Fedora</a>
+
+<a class="post-tags-list-item" href='/tags/Red-Hat/'>#&nbsp;Red Hat</a>
+
+<a class="post-tags-list-item" href='/tags/虚拟机/'>#&nbsp;虚拟机</a>
+
+<a class="post-tags-list-item" href='/tags/考古/'>#&nbsp;考古</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                
+<div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2018/archiso-guide/">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">使用 Archiso 定制 Arch Linux 镜像</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                        <div class="card-footer post-comment">
+                            <style>
+    a.disqus-author,
+    a.disqus-author:hover,
+    a.disqus-author:visited {
+        color: #50596c;
+    }
+
+    #disqus-switch {
+        margin-bottom: 1rem;
+    }
+</style>
+
+<div class="comments" id="comments">
+    <div id="disqus_thread" class="disqus-proxy-list"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.3"></script>
+<script>
+function setLocalStorage(s, e) {
+    try {
+        localStorage.setItem(s, e)
+    } catch (o) {
+        console.log(o), console.log("Failed to set localStorage item")
+    }
+}
+function proxyMode() {
+    setLocalStorage("disqusMode", "proxy"), $("#disqus_thread").empty(), $("#disqus-switch").remove(), $("#comments").prepend('<div id="disqus-switch"><button class="disqus-switch-button btn btn-primary" id="disqus-switch-to-direct" data-current-mode="proxy">加载完整评论（请确保 disqus 可以正常加载）</button></div>'), $("#disqus_thread").append('<div class="disqus-loading h5">Loading...</div>'), $.ajax({
+        type: "GET",
+        url: disqus_proxy + "threads/list.json?forum=" + disqus_shortname + "&thread=ident:" + disqus_identifier + "&api_key=" + disqus_apikey,
+        contentType: "application/json; charset=utf-8",
+        async: !0,
+        success: function(s) {
+            if (1 != s.response.length) return !1;
+            var e = s.response[0].id;
+            $.ajax({
+                type: "GET",
+                url: disqus_proxy + "posts/list.json?forum=" + disqus_shortname + "&thread=" + e + "&api_key=" + disqus_apikey,
+                contentType: "application/json; charset=utf-8",
+                async: !0,
+                success: function(s) {
+                    if (0 != s.response.length && "undefined" != typeof s.response) {
+                        var e = '';
+                        for (var o in s.response) {
+                            if (s.response[o].media.length > 0) for (var t in s.response[o].media) s.response[o].message += '<a href="' + s.response[o].media[t].location + '" target="_blank" rel="nofollow"><img src="' + s.response[o].media[t].location + '" alt="图片"></a>';
+                            e += '<div class="tile"><div class="tile-icon"><figure class="avatar"><a href="' + s.response[o].author.profileUrl + '" class="disqus-user" target="_blank" rel="nofollow"><img src="' + s.response[o].author.avatar.cache + '" alt="Avatar"></a></figure></div>'
+                            e += '<div class="tile-content"><p class="tile-title text-bold mb-0 disqus-author"><a href="' + s.response[o].author.profileUrl + '" class="disqus-author" target="_blank" rel="nofollow">' + s.response[o].author.name + '</a></p><p class="tile-subtitle small mb-1 text-gray">' + s.response[o].createdAt + '</p><p class="tile-subtitle mb-2">' + s.response[o].message + '</p></div></div>'
+                        }
+                        $("#disqus_thread").empty(), $("#disqus_thread").append(e), s.cursor.more && $("#comments").append('<div id="disqus-loadmore" class="text-center"><button id="disqus-loadmore-button" class="btn btn-primary">Load more</button></div>')
+                    } else $(".disqus-loading").text("Um...Nothing yet")
+                },
+                error: function(s) {
+                    console.log(s)
+                }
+            })
+        },
+        error: function(s) {
+            console.log(s)
+        }
+    })
+}
+function directMode(s) {
+    $("#disqus_thread").empty(), $("#disqus-switch").remove(), $("#disqus-loadmore").remove(), $("#comments").prepend('<div id="disqus-switch" class="text-center"><button class="disqus-switch-button btn" id="disqus-switch-to-proxy" data-current-mode="direct">加载评论基本模式</button></div>');
+    var e = document.createElement("script");
+    e.type = "text/javascript", e.async = !0, e.src = "//" + disqus_shortname + ".disqus.com/" + s, (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(e), setLocalStorage("disqusMode", "direct")
+}
+var disqus_shortname = "yongmeng",
+    disqus_apikey = "E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F"
+    disqus_proxy = "https://cors-anywhere.herokuapp.com/disqus.com/api/3.0/"
+    disqus_identifier = "http://ykye.top/2018/some-antique-linux-vol1/",
+    disqus_title = "一些古董 Linux 发行版们 Vol. 1",
+    disqus_url = "http://ykye.top/2018/some-antique-linux-vol1/";
+$("body").on("click", "#disqus-switch-to-proxy", function() {
+    proxyMode()
+}), $("body").on("click", "#disqus-switch-to-direct", function() {
+    directMode("embed.js")
+}), $(window).on("scroll.comments", function() {
+    if ($(window).scrollTop() + $(window).height() > .7 * $(document).height()) {
+        try {
+            "proxy" == localStorage.getItem("disqusMode") ? proxyMode() : directMode("embed.js")
+        } catch (s) {
+            console.log(s), console.log("Failed to get localStorage item"), proxyMode()
+        }
+        $(window).off("scroll.comments")
+    }
+})
+</script>
+
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span data-year></span>
+        <a class="footer-copyright-a" href="http://ykye.top">Y0ngm3ng</a>
+    </p>
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+        
+             Just a little time <br> No, your addiction's not a crime <br> It's just a smaller part of who <br> You want to become in the end. <br> <br> TRISTAM - CRAVE <br><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noreferrer"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg"  alt="CC-BY-SA" /></a>
+        
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+            
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+        
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="noopener">Suka</a>
+    </p>
+</footer>
+
+        
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+
+
+    /* Copyright */
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.querySelector('span[data-year]')
+    
+        copyrightContent.textContent = copyrightNow
+    
+
+
+
+/* Cnosole Log */
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.2.0 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+</script>
+
+<!-- vanilla-lazyload -->
+
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+
+
+    <!-- Busuanzi -->
+    
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+
+
+    <!-- prettify -->
+    
+    
+        <script src="/lib/prettify/prettify.js"></script>
+    
+    <script>
+        for (var i = 0; i < (document.querySelectorAll('pre') || []).length; i += 1) {
+            document.querySelectorAll('pre')[i].classList.add('prettyprint');
+            document.querySelectorAll('pre')[i].classList.add('linenums');
+        }
+        prettyPrint();
+    </script>
+
+
+
+
+<!-- gallery.js -->
+
+
+<!-- Comment -->
+
+    
+        
+    
+
+
+<!-- ### Custom Footer ### -->
+
+
+    </body>
+
+</html>
