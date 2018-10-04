@@ -113,8 +113,8 @@
 <p>（以下均以 TUNA 镜像源为例，官方源实在无法直视）</p>
 <p><img src="https://i.jpg.dog/img/801c7d0df307487125b66dcbd954267e.png" alt="801c7d0df307487125b66dcbd954267e.png"></p>
 <p>然后安装</p>
-<pre><code class="bash">flatpak install bundle --bundle
-</code></pre>
+<pre class="line-numbers highlight language-base"><code class="language-base">flatpak install bundle --bundle
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h2><p>Deepin 打包好的应用包括：</p>
 <ul>
 <li>深度日历</li>
@@ -135,14 +135,14 @@
 <hr>
 <p><a href="https://mirrors.tuna.tsinghua.edu.cn/deepin/pool/main/d/deepin-fpapp-org.deepin.flatdeb.deepin-calendar/" target="_blank" rel="noopener">下载</a> <code>deepin-fpapp-org.deepin.flatdeb.deepin-calendar_1.2.3+r1_amd64.deb</code></p>
 <p>依照上文，解压出 <code>bundle</code>，如法炮制</p>
-<pre><code class="bash">flatpak install bundle --bundle
+<pre class="line-numbers highlight language-bash"><code class="language-bash">flatpak <span class="token function">install</span> bundle --bundle
 Installing: org.deepin.flatdeb.deepin-calendar/x86_64/master from bundle bundle
 Now at 38c791026f75.
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><em><code>org.deepin.flatdeb.deepin-calendar</code> 是应用包名</em></p>
 <h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>安装完的 Flatpak 应用可以通过命令行运行</p>
-<pre><code class="bash">flatpak run org.deepin.flatdeb.deepin-calendar
-</code></pre>
+<pre class="line-numbers highlight language-bash"><code class="language-bash">flatpak run org.deepin.flatdeb.deepin-calendar
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>每次都通过命令启动肯定会让人疯掉，显然需要写一个 <code>.desktop</code> 文件，或者用类似 KDE Menu Editor 这样的工具来新建一个</p>
 <pre><code>[Desktop Entry]
 Exec=flatpak run org.deepin.flatdeb.deepin-calendar
@@ -527,81 +527,5 @@ passwd -u archman
     </entry>
     
   
-  
-    
-    <entry>
-      <title><![CDATA[关于……]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="350" height="100" src="//music.163.com/outchain/player?type=2&id=17123397&auto=1&height=66"></iframe>
-
-<p>你好。我是 Yongmeng Ye</p>
-<blockquote>
-<p>正在使用的网名还有 Yongmeng / Yeyongmeng29 /…</p>
-<p>显然这都是我的真实姓名，但这些网名用了将近十年了，也懒得换了……</p>
-</blockquote>
-<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><ul>
-<li><p>福州人，高中</p>
-</li>
-<li><p><strong> 爱好 懒 </strong></p>
-</li>
-<li><p>Python（HelloWorld级）</p>
-</li>
-<li><p>Firefox 党，vim 党</p>
-</li>
-<li><p>openSUSE 用户</p>
-</li>
-</ul>
-<h2 id="关于-Y0ngm3ng"><a href="#关于-Y0ngm3ng" class="headerlink" title="关于 Y0ngm3ng"></a>关于 Y0ngm3ng</h2><p>一个以计算机技术为主的博客</p>
-<p>Y0ngm3ng 中的 “0” 和 “3” 是 “o” 和 “e” 的 <a href="https://zh.wikipedia.org/wiki/Leet" target="_blank" rel="noopener">Leet 转写</a></p>
-<blockquote>
-<p>去年中旬 ( 2017.7 ) 脑子一热，利用 GitHub Page（现在依然是）建立了 Y0ngm3ng</p>
-<p>然后出现了两个问题：</p>
-<ul>
-<li><p>我想写的东西往往已经存在许多资料了，遂开始无事可写，导致：</p>
-</li>
-<li><p>我自己都看不懂我写了啥，又导致：</p>
-</li>
-<li><p>我又开始无事可写……唉……</p>
-</li>
-</ul>
-</blockquote>
-<hr>
-<h2 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h2><p><em> 提供有偿的深夜陪聊<del>和代孕</del>服务，无偿的也可以（ </em></p>
-<ul>
-<li><p><a href="https://donate.unicef.org/donate/now" target="_blank" rel="noopener">付款通道一</a></p>
-</li>
-<li><p><a href="https://my.fsf.org/donate" target="_blank" rel="noopener">付款通道二</a></p>
-</li>
-<li><p><a href="https://t.me/Yeyongmeng29" target="_blank" rel="noopener">Telegram</a></p>
-</li>
-<li><p><a href="https://t.me/YongmengW" target="_blank" rel="noopener">Telegram 频道</a></p>
-</li>
-<li><p><a href="mailto: YongmengKennyYe@Protonmail.com" target="_blank" rel="noopener">YongmengKennyYe@Protonmail.com</a></p>
-</li>
-</ul>
-<hr>
-<h2 id="Avatar"><a href="#Avatar" class="headerlink" title="Avatar"></a>Avatar</h2><p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=50945552" target="_blank" rel="noopener">Pixiv 50945552</a> Huiro</p>
-<!---
-
-## Banner
-
-[Pixiv 61183750 sishenfan](http://www.pixiv.net/member_illust.php?mode=medium&illust_id=61183750)
-
---->
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[tags]]></title>
-      <url>/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[WE ARE THE LIGHT]]></title>
-      <url>/links/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
   
 </search>
