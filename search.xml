@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Your data is YOUR data - /e/ Beta 体验]]></title>
       <url>/2018/evaluating-mydataismydata-beta/</url>
-      <content type="html"><![CDATA[<p>我也不知道 <a href="https://en.wikipedia.org/wiki/Ga%C3%ABl_Duval" target="_blank" rel="noopener">Gaël Duval</a> （就是创立了 <a href="https://en.wikipedia.org/wiki/Mandriva_Linux" target="_blank" rel="noopener">Mandriva</a> 的那位）是受了什么刺激要把 eelo 这个名字改成一个任性的 <strong>/e/</strong>，更任性的是，/e/ 要读作 <code>my data is my data</code>……</p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我也不知道 <a href="https://en.wikipedia.org/wiki/Ga%C3%ABl_Duval" target="_blank" rel="noopener">Gaël Duval</a> （就是创立了 <a href="https://en.wikipedia.org/wiki/Mandriva_Linux" target="_blank" rel="noopener">Mandriva</a> 的那位）是受了什么刺激要把 eelo 这个名字改成一个任性的 <strong>/e/</strong>，更任性的是，/e/ 要读作 <code>my data is my data</code>……</p>
 <a id="more"></a>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>……槽吐完了。从这个任性的名字中也不难看出 <a href="https://e.foundation" target="_blank" rel="noopener">/e/</a> 的主要特色就是<strong>尊重用户隐私</strong>，/e/ 也在近日<a href="https://e.foundation/e-first-beta-is-here/" target="_blank" rel="noopener">释出了</a>首个 Beta 0.1 版本。笔者也借这个机会来体验了一下这个想要打造一个独立于 Google Apple 这类互联网巨头的生态的 Android ROM。</p>
 <h2 id="申请测试账号"><a href="#申请测试账号" class="headerlink" title="申请测试账号"></a>申请测试账号</h2><p>/e/ 的线上服务暂时还没有开放注册，需要发送邮件申请一个测试账号。</p>
@@ -98,8 +98,8 @@
     <entry>
       <title><![CDATA[安装 Flatpak 格式的 Deepin 应用]]></title>
       <url>/2018/install-dfpapp/</url>
-      <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="350" height="100" src="//music.163.com/outchain/player?type=2&id=463268241&auto=1&height=66"></iframe>
-
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
+    <div id="aplayer-KWgDIaDh" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="463268241" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#3ac5bb" data-loop="none" data-volume="0.5"></div>
 <p>Deepin 最近也是多灾多难，<del>老板跑路（，</del>新版本难产……</p>
 <a id="more"></a>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>话说 Deepin 团队已经使用 <a href="https://flatpak.org/" target="_blank" rel="noopener">Flatpak</a> 封装自家应用，这无疑极大方便了其他发行版用户。但是 Deepin 没有直接提供 Flatpak 源等等，所以想要安装还是要自己动手。</p>
@@ -193,7 +193,7 @@ Exec=flatpak run org.deepin.flatdeb.deepin-calendar
     <entry>
       <title><![CDATA[HTTPS://YKYe.top]]></title>
       <url>/2018/about-ykye-top/</url>
-      <content type="html"><![CDATA[<p>如图，Y0ngm3ng 现在启用了 <code>YKYe.top</code> 域名<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>如图，Y0ngm3ng 现在启用了 <code>YKYe.top</code> 域名<br><a id="more"></a></p>
 <h2 id="关于-YKYe"><a href="#关于-YKYe" class="headerlink" title="关于 YKYe"></a>关于 YKYe</h2><p>注册于 <a href="https://namesilo.com" target="_blank" rel="noopener">Namesilo</a></p>
 <p><strong>Y</strong>ongmeng <strong>K</strong>enny <strong>Ye</strong></p>
 <blockquote>
@@ -221,7 +221,7 @@ Exec=flatpak run org.deepin.flatdeb.deepin-calendar
     <entry>
       <title><![CDATA[使用 Archiso 定制 Arch Linux 镜像]]></title>
       <url>/2018/archiso-guide/</url>
-      <content type="html"><![CDATA[<p>Arch Linux 作为高度可定制化的 Linux 发行版，连制作镜像都提供了一系列顺手的工具。这里简要介绍一下 Archiso 的用法。</p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Arch Linux 作为高度可定制化的 Linux 发行版，连制作镜像都提供了一系列顺手的工具。这里简要介绍一下 Archiso 的用法。</p>
 <a id="more"></a>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
 <li>已经安装好的 Arch Linux x86_64</li>
@@ -333,7 +333,7 @@ passwd -u archman
     <entry>
       <title><![CDATA[一些古董 Linux 发行版们 Vol. 1]]></title>
       <url>/2018/some-antique-linux-vol1/</url>
-      <content type="html"><![CDATA[<p>上个月突然心血来潮，，从 1 月 27 号开始陆续挖了一些古董级 Linux 发行版出来考古。</p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>上个月突然心血来潮，，从 1 月 27 号开始陆续挖了一些古董级 Linux 发行版出来考古。</p>
 <blockquote>
 <p><em>其实还不算古董，真的古董不是还没去挖就是恐怕连尸块都找不着了……</em></p>
 </blockquote>
