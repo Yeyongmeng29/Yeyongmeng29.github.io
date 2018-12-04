@@ -45,11 +45,20 @@ window.oldVersion = [
 
 
 
-    <!-- ### Meta & Title & Info ### -->
+    <!-- ### Preload ### -->
     
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" as="script">
 
 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
@@ -73,10 +82,10 @@ window.oldVersion = [
 <meta name="format-detection" content="telephone=no">
 
 <!-- Description -->
-
+<meta name="description" content="">
 
 <!-- Keywords -->
-
+<meta name="keywords" content="">
 
 <!-- Disable Fucking Bloody Baidu Tranformation -->
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -160,6 +169,8 @@ window.oldVersion = [
 
 
 
+
+
     <!-- prism.css -->
     
 
@@ -192,24 +203,23 @@ window.oldVersion = [
 
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    
+    <meta property="og:title" content="关于…… | Y0ngm3ng">
+<meta property="og:site_name" content="Y0ngm3ng">
 
+<meta property="og:locale" content="zh-CN">
 
-<meta property="og:title" content="关于…… | Y0ngm3ng">
-
-<meta property="og:type" content="blog">
 <meta property="og:url" content="http://ykye.top/about/">
 <meta property="og:image" content="http://ykye.top/img/favicon.png">
 
-
-
-
+<meta property="og:description" content="">
 
 <meta name="twitter:card" content="summary">
 
 
+    <meta property="og:type" content="blog">
 
-<meta property="og:locale" content="zh-CN">
+
+
 
 
     <!-- ### Analytics ### -->
@@ -240,8 +250,6 @@ window.oldVersion = [
 
 
 
-
-
     <!-- ### Custom Head ### -->
     
 
@@ -253,6 +261,9 @@ window.oldVersion = [
 
     <body>
         
+
+            
+
             <!-- ### Main content ### -->
             <!-- ## Header ##-->
 <header>
@@ -306,7 +317,7 @@ window.oldVersion = [
 
 <div class="post-header-info">
     <p class="post-header-info-left text-gray">
-        <img class="author-thumb" src="/img/avatar.png" alt="Yongmeng Ye's Avatar">
+        <img class="author-thumb lazyload" data-src="/img/avatar.png" alt="Yongmeng Ye's Avatar">
         <span>2018-02-05</span>
         
         
@@ -322,21 +333,20 @@ window.oldVersion = [
     </p>
     <div class="post-header-info-right">
         
-            
-<div class="dropdown dropdown-right">
+            <div class="dropdown dropdown-right">
 <a class="dropdown-toggle" tabindex="0">分享本文</a>
 <ul class="menu share-menu">
     <!-- Share Weibo -->
     
     <li class="menu-item">
-        <a href="http://service.weibo.com/share/share.php?appkey=&title=关于……&url=http://ykye.top/about/index.html&pic=http://ykye.top/img/favicon.png&searchPic=false&style=simple" target="_blank" rel="noopener noreferrer nofollow">分享到微博</a>
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=关于……&url=http://ykye.top/about/&pic=http://ykye.top/img/favicon.png&searchPic=false&style=simple" target="_blank" rel="noopener noreferrer nofollow">分享到微博</a>
     </li>
     
 
     <!-- Share Twitter -->
     
     <li class="menu-item">
-        <a href="https://twitter.com/intent/tweet?text=关于……&url=http://ykye.top/about/index.html&via=Yongmeng Ye" target="_blank" rel="noopener noreferrer nofollow">分享到 Twitter</a>
+        <a href="https://twitter.com/intent/tweet?text=关于……&url=http://ykye.top/about/&via=Yongmeng Ye" target="_blank" rel="noopener noreferrer nofollow">分享到 Twitter</a>
     </li>
     
 
@@ -352,14 +362,14 @@ window.oldVersion = [
     <!-- Share QQ -->
     
     <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Y0ngm3ng&title=Y0ngm3ng&summary=&pics=http://ykye.top/img/favicon.png&url=http://ykye.top" target="_blank" rel="noopener noreferrer nofollow"> 分享到 QQ</a>
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Y0ngm3ng&title=Y0ngm3ng&summary=&pics=http://ykye.top/img/favicon.png&url=http://ykye.top/about/" target="_blank" rel="noopener noreferrer nofollow"> 分享到 QQ</a>
     </li>
     
 
     <!-- Share Telegram -->
     
     <li class="menu-item">
-        <a href="https://t.me/share/url?url=http://ykye.top&text=Y0ngm3ng" target="_blank" rel="noopener noreferrer nofollow">分享到 Telegram</a>
+        <a href="https://t.me/share/url?url=http://ykye.top/about/&text=Y0ngm3ng" target="_blank" rel="noopener noreferrer nofollow">分享到 Telegram</a>
     </li>
     
 
@@ -386,7 +396,7 @@ window.oldVersion = [
                     
                     <article id="post-content">
                         
-    <div id="aplayer-DvdMWdsX" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="17123397" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#3ac5bb" data-loop="none" data-volume="0.5"></div>
+    <div id="aplayer-UFbFYxiO" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="17123397" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#3ac5bb" data-loop="none" data-volume="0.5"></div>
 <p>你好。我是 Yongmeng Ye</p>
 <blockquote>
 <p>正在使用的网名还有 Yongmeng / Yeyongmeng29 /…</p>
@@ -669,7 +679,7 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.2.0 %c 
 
     <!-- Busuanzi -->
     
-    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
 
 
 <!-- Offset -->

@@ -45,11 +45,20 @@ window.oldVersion = [
 
 
 
-    <!-- ### Meta & Title & Info ### -->
+    <!-- ### Preload ### -->
     
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" as="script">
 
 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
@@ -73,10 +82,10 @@ window.oldVersion = [
 <meta name="format-detection" content="telephone=no">
 
 <!-- Description -->
-
+<meta name="description" content="">
 
 <!-- Keywords -->
-
+<meta name="keywords" content="">
 
 <!-- Disable Fucking Bloody Baidu Tranformation -->
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -160,6 +169,8 @@ window.oldVersion = [
 
 
 
+
+
     <!-- prism.css -->
     
 
@@ -192,24 +203,23 @@ window.oldVersion = [
 
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    
+    <meta property="og:title" content="标签: Flatpak | Y0ngm3ng">
+<meta property="og:site_name" content="Y0ngm3ng">
 
+<meta property="og:locale" content="zh-CN">
 
-<meta property="og:title" content="标签: Flatpak | Y0ngm3ng">
-
-<meta property="og:type" content="blog">
 <meta property="og:url" content="http://ykye.top/tags/Flatpak/">
 <meta property="og:image" content="http://ykye.top/img/favicon.png">
 
-
-
-
+<meta property="og:description" content="">
 
 <meta name="twitter:card" content="summary">
 
 
+    <meta property="og:type" content="blog">
 
-<meta property="og:locale" content="zh-CN">
+
+
 
 
     <!-- ### Analytics ### -->
@@ -240,8 +250,6 @@ window.oldVersion = [
 
 
 
-
-
     <!-- ### Custom Head ### -->
     
 
@@ -250,6 +258,9 @@ window.oldVersion = [
 
     <body>
         
+
+            
+
             <!-- ### Main content ### -->
             <!-- ## Header ##-->
 <header>
@@ -316,7 +327,7 @@ Deepin 最近也是多灾多难，老板跑路（，新版本难产……
 
     <!-- Date & Category -->
     <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb" src="/img/avatar.png" alt="Yongmeng Ye's Avatar">
+        <img class="author-thumb lazyload" data-src="/img/avatar.png" alt="Yongmeng Ye's Avatar">
         <time>2018-07-15</time>
         
             <span class="suka-devide-dot"></span>
@@ -409,7 +420,7 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.2.0 %c 
 
     <!-- Busuanzi -->
     
-    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
 
 
 <!-- Offset -->

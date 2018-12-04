@@ -45,11 +45,20 @@ window.oldVersion = [
 
 
 
-    <!-- ### Meta & Title & Info ### -->
+    <!-- ### Preload ### -->
     
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" as="script">
 
 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
@@ -73,10 +82,10 @@ window.oldVersion = [
 <meta name="format-detection" content="telephone=no">
 
 <!-- Description -->
-
+<meta name="description" content="">
 
 <!-- Keywords -->
-
+<meta name="keywords" content="">
 
 <!-- Disable Fucking Bloody Baidu Tranformation -->
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -160,6 +169,8 @@ window.oldVersion = [
 
 
 
+
+
     <!-- prism.css -->
     
 
@@ -192,24 +203,23 @@ window.oldVersion = [
 
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    
+    <meta property="og:title" content="tags | Y0ngm3ng">
+<meta property="og:site_name" content="Y0ngm3ng">
 
+<meta property="og:locale" content="zh-CN">
 
-<meta property="og:title" content="tags | Y0ngm3ng">
-
-<meta property="og:type" content="blog">
 <meta property="og:url" content="http://ykye.top/tags/">
 <meta property="og:image" content="http://ykye.top/img/favicon.png">
 
-
-
-
+<meta property="og:description" content="">
 
 <meta name="twitter:card" content="summary">
 
 
+    <meta property="og:type" content="blog">
 
-<meta property="og:locale" content="zh-CN">
+
+
 
 
     <!-- ### Analytics ### -->
@@ -240,8 +250,6 @@ window.oldVersion = [
 
 
 
-
-
     <!-- ### Custom Head ### -->
     
 
@@ -250,6 +258,9 @@ window.oldVersion = [
 
     <body>
         
+
+            
+
             <!-- ### Main content ### -->
             <!-- ## Header ##-->
 <header>
@@ -290,7 +301,7 @@ window.oldVersion = [
     <div class="container">
     <main>
         <div class="tagscloud">
-        <a href="/tags/e/" style="font-size: 0.75rem; color: #acb3c2">/e/</a> <a href="/tags/Arch-Linux/" style="font-size: 0.75rem; color: #acb3c2">Arch Linux</a> <a href="/tags/Archiso/" style="font-size: 0.75rem; color: #acb3c2">Archiso</a> <a href="/tags/Debian/" style="font-size: 0.75rem; color: #acb3c2">Debian</a> <a href="/tags/Deepin/" style="font-size: 1.8rem; color: #454d5d">Deepin</a> <a href="/tags/Fedora/" style="font-size: 0.75rem; color: #acb3c2">Fedora</a> <a href="/tags/Flatpak/" style="font-size: 0.75rem; color: #acb3c2">Flatpak</a> <a href="/tags/Red-Hat/" style="font-size: 0.75rem; color: #acb3c2">Red Hat</a> <a href="/tags/域名/" style="font-size: 0.75rem; color: #acb3c2">域名</a> <a href="/tags/考古/" style="font-size: 0.75rem; color: #acb3c2">考古</a> <a href="/tags/虚拟机/" style="font-size: 0.75rem; color: #acb3c2">虚拟机</a>
+        <a href="/tags/e/" style="font-size: 0.75rem; color: #acb3c2">/e/</a> <a href="/tags/Arch-Linux/" style="font-size: 0.75rem; color: #acb3c2">Arch Linux</a> <a href="/tags/Archiso/" style="font-size: 0.75rem; color: #acb3c2">Archiso</a> <a href="/tags/Debian/" style="font-size: 0.75rem; color: #acb3c2">Debian</a> <a href="/tags/Deepin/" style="font-size: 1.8rem; color: #454d5d">Deepin</a> <a href="/tags/Fedora/" style="font-size: 0.75rem; color: #acb3c2">Fedora</a> <a href="/tags/Flatpak/" style="font-size: 0.75rem; color: #acb3c2">Flatpak</a> <a href="/tags/Google/" style="font-size: 0.75rem; color: #acb3c2">Google</a> <a href="/tags/Red-Hat/" style="font-size: 0.75rem; color: #acb3c2">Red Hat</a> <a href="/tags/域名/" style="font-size: 0.75rem; color: #acb3c2">域名</a> <a href="/tags/终端/" style="font-size: 0.75rem; color: #acb3c2">终端</a> <a href="/tags/考古/" style="font-size: 0.75rem; color: #acb3c2">考古</a> <a href="/tags/虚拟机/" style="font-size: 0.75rem; color: #acb3c2">虚拟机</a>
         </div>
     </main>
 </div>
@@ -367,7 +378,7 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.2.0 %c 
 
     <!-- Busuanzi -->
     
-    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
 
 
 <!-- Offset -->
